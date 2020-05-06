@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fx_string_ok">确认</string>
+    <string name="not_support_oom_recovery">当前文档的打开方式暂不支持内存回收</string>
+    <string name="out_of_memory_and_recovering">内存不足，正在回收中…</string>
+    <string name="out_of_memory_but_cannot_recovered">内存回收失败</string>
+    <string name="rv_sign_waiting">正在处理…</string>
+</resources>

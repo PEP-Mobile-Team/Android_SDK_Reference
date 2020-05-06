@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ux_color_white">
+
+    <RelativeLayout
+        android:id="@+id/select_file_path"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_list_item_height_1l_phone"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:background="@color/ux_color_white"/>
+    <ImageView
+        android:id="@+id/item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ux_color_seperator_gray"
+        android:layout_below="@+id/select_file_path"/>
+
+    <RelativeLayout
+        android:id="@+id/select_file_file_browser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/item_divider"
+        android:background="@color/ux_color_white"></RelativeLayout>
+</RelativeLayout>

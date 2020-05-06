@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fx_string_ok">OK</string>
+    <string name="not_support_oom_recovery">현재 문서는 메모리 회수를 지원하지 않습니다.</string>
+    <string name="out_of_memory_and_recovering">메모리가 부족하여 회수 중입니다…</string>
+    <string name="out_of_memory_but_cannot_recovered">회수에 실패하였습니다.</string>
+    <string name="rv_sign_waiting">처리 중…</string>
+</resources>

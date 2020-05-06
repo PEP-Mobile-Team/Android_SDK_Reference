@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_radian"
+    android:orientation="vertical">
+
+    <com.foxit.uiextensions.utils.UIMarqueeTextView
+        android:id="@+id/fx_dialog_title"
+        style="@style/fx_dialog_text_edit_title_style"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="@dimen/ux_text_height_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/ux_bg_color_toolbar_colour"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ux_color_translucent"
+        android:orientation="vertical"
+        >
+        <ListView
+            android:id="@+id/rd_screen_lock_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+    </LinearLayout>
+
+
+</LinearLayout>

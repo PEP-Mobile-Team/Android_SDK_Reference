@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rv_panel_bkot_item_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rv_panel_annot_item_page_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_text_height_annotation_item_page"
+        android:background="@color/ux_color_annotation_page_item"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/rv_panel_annot_item_page_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/ux_text_color_all_pdf_path"
+            android:textSize="@dimen/ux_text_height_body1" />
+
+        <TextView
+            android:id="@+id/rv_panel_annot_item_page_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="4"
+            android:textColor="@color/ux_bg_color_toolbar_colour"
+            android:textSize="@dimen/ux_text_height_body1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rd_panel_rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_list_item_height_2l_phone"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/rv_panel_annot_item_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+            android:orientation="vertical"
+            android:background="@drawable/rv_panel_bkot_item_bg" >
+
+            <RelativeLayout
+                android:id="@+id/rv_panel_annot_item_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:baselineAligned="false"
+                android:paddingBottom="2dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rv_panel_annot_item_icon_layout"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/rv_panel_annot_item_icon_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rv_panel_annot_highlight_type" />
+
+                    <ImageView
+                        android:id="@+id/rv_panel_annot_item_icon_red"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/rv_panel_annot_redpoint" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/rv_panel_annot_item_mid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/rv_panel_annot_item_icon_layout"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/rv_panel_annot_item_author_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:ellipsize="middle"
+                            android:text="Foxit"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_body2" />
+
+                        <TextView
+                            android:id="@+id/rv_panel_annot_item_date_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="middle"
+                            android:singleLine="true"
+                            android:gravity="center_vertical"
+                            android:text="2014-08-08 12:22:23"
+                            android:textColor="@color/ux_text_color_body1_gray"
+                            android:textSize="@dimen/ux_text_height_body1" />
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/rd_panel_annot_item_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/rd_bar_more_selector"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/rv_panel_annot_item_contents_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:lines="2"
+                android:ellipsize="end"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="this is test\ntest this\na"
+                android:textColor="@color/ux_text_color_body2_dark"
+                android:textSize="@dimen/ux_text_height_annotation_content"
+                android:gravity="left|center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rd_annot_item_moreview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:background="@color/ux_bg_color_toolbar_light"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/rd_annot_item_ll_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_annot_item_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_annot_item_reply_selector"/>
+                <TextView
+                    android:id="@+id/rd_annot_item_tv_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:text="@string/fx_string_reply"
+                    android:textSize="13sp"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rd_annot_item_ll_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_annot_item_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_annot_item_comment_selector"/>
+                <TextView
+                    android:id="@+id/rd_annot_item_tv_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:text="@string/fx_string_comment"
+                    android:textSize="13sp"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rd_annot_item_ll_redaction"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_annot_item_apply_redaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_annot_item_redaction_selector"/>
+                <TextView
+                    android:id="@+id/rd_annot_item_tv_apply_redaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:text="@string/fx_string_apply"
+                    android:textSize="13sp"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rd_annot_item_ll_flatten"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_annot_item_flatten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_annot_item_flatten_selector"/>
+                <TextView
+                    android:id="@+id/rd_annot_item_tv_flatten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:text="@string/fx_string_flatten"
+                    android:textSize="13sp"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rd_annot_item_ll_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_annot_item_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_annot_item_delete_selector"/>
+                <TextView
+                    android:id="@+id/rd_annot_item_tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/fx_string_delete"
+                    android:textSize="13sp"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

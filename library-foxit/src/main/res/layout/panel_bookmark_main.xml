@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_bookmark_content_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ux_text_color_title_light" >
+
+    <FrameLayout
+        android:id="@+id/panel_content_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/panel_bookmark_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/ux_color_seperator_gray"
+            android:dividerHeight="1px"
+            android:fastScrollEnabled="false"
+            android:descendantFocusability="afterDescendants"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/panel_nobookmark_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/rv_panel_readingbookmark_tips_noinfo"
+            android:textColor="@color/ux_color_black"
+            android:textSize="@dimen/ux_text_height_subhead"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</RelativeLayout>

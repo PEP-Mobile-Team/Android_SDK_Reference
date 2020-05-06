@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rd_search_content_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/panel_bkot_item_bg"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="@dimen/ux_horz_left_margin_phone">
+
+    <TextView
+        android:id="@+id/search_page_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/ux_text_color_body2_dark"
+        android:textSize="@dimen/ux_text_height_body2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/search_curpage_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/ux_text_color_body2_dark"
+            android:textSize="@dimen/ux_text_height_body2"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/ux_color_seperator_dark"
+        android:textSize="@dimen/ux_text_height_body2"
+        android:visibility="gone" />
+
+</RelativeLayout>

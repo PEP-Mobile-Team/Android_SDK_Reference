@@ -1,0 +1,82 @@
+<resources>
+    <string name="fx_string_yes">是</string>
+    <string name="fx_string_no">否</string>
+    <string name="fx_string_ok">确定</string>
+    <string name="fx_string_cancel">取消</string>
+    <string name="fx_string_save">保存</string>
+    <string name="fx_string_saveas">另存为</string>
+    <string name="fx_string_delete">删除</string>
+
+    <string name="hm_back">返回</string>
+    <string name="hm_document">文件夹</string>
+    <string name="hm_sign">登录</string>
+    <string name="hm_signout">退出</string>
+
+    <!-- comparison -->
+    <string name="hm_comparison_title">对比</string>
+    <string name="hm_comparison_mode">对比模式</string>
+    <string name="hm_comparison_mode_overlay">叠加</string>
+    <string name="hm_comparison_mode_side_by_side">并排</string>
+    <string name="hm_comparison_old_file">旧文件</string>
+    <string name="hm_comparison_new_file">新文件</string>
+    <string name="hm_comparison_selected_color">选取色</string>
+    <string name="hm_comparison_selected_file_title">选取</string>
+
+    <string name="rv_panel_annot_loading_start">正在加载&#8230;</string>
+    <string name="rv_panel_annot_deleting">正在删除&#8230;</string>
+    <string name="rv_panel_annot_failed">删除失败</string>
+    <string name="fx_string_saving">正在保存&#8230;</string>
+    <string name="fx_string_closing">正在关闭&#8230;</string>
+    <string name="fx_string_recovering">正在处理&#8230;</string>
+    <string name="fx_string_opening">正在打开&#8230;</string>
+    <string name="fx_string_copying">正在复制&#8230;</string>
+    <string name="fx_string_processing">正在处理&#8230;</string>
+
+    <!-- Property Tab -->
+    <string name="pb_fill_tab">填充</string>
+    <string name="pb_icon_tab">图标</string>
+    <string name="pb_border_tab">边框 </string>
+    <string name="pb_fontname_tab">字体</string>
+    <string name="pb_watermark_tab">水印</string>
+    <string name="pb_overlay_text_tab">覆盖文本</string>
+
+    <string name="fx_import_blank_page">空白页面</string>
+    <string name="fx_import_file">文档</string>
+    <string name="fx_import_dcim">从图库</string>
+    <string name="fx_import_camera">从相机</string>
+    <string name ="fx_string_import">文档</string>
+
+    <!-- UIMatchDialog -->
+    <string name="fm_annot_copy">内容已经被添加到了剪贴板。</string>
+    <string name="fm_move">移动</string>
+    <string name="fm_paste_replace">替换</string>
+    <string name="fm_paste_skip">跳过</string>
+    <string name="rv_emailreview_mergedlg_openbutton">不，仅打开</string>
+    <string name="cloud_toolbar_more_upload">上传</string>
+
+    <string name="rv_url_dialog_title">访问</string>
+    <string name="rv_urldialog_title">打开该链接可能存在安全问题，确定要打开：</string>
+    <string name="rv_urldialog_title_ko"></string>
+    <string name="rv_invalid_license">您无权使用此附加模块，请与我们联系以升级您的许可证。</string>
+    <string name="rv_deivce_limitation">您已超过此文档允许的设备数。</string>
+    <string name="rv_no_rights">抱歉，您没有权限打开此文档</string>
+    <string name="rv_rights_expired">您的授权或者免费试用版已过期。</string>
+    <string name="rv_document_open_failed">文件打开失败</string>
+    <string name="rv_unknown_error">未知错误</string>
+    <string name="rv_format_error">格式错误：不是一个PDF文件或该文件已损坏</string>
+
+    <string name="rv_back_save_to_original_file">保存到原文件</string>
+    <string name="rv_back_save_to_new_file">保存为新文件</string>
+    <string name="rv_back_discard_modify">放弃所有更改</string>
+    <string name="fx_save_file_failed">保存文档失败！</string>
+    <string name="fx_string_filereplace_warning">该文件已经存在，是否要替换它？</string>
+
+    <string name="rv_password_dialog_title">密码</string>
+    <string name="rv_tips_password_error">密码不正确，请重试</string>
+    <string name="rv_tips_password">该文件是加密文件，请输入密码</string>
+    <string name="fx_string_password_dialog_title">请输入密码</string>
+
+    <string name="fx_flatten_toast">扁平化注释使它成为文档的一部分，它将无法被修改或删除。</string>
+    <string name="fx_system_language_changed_toast">系统语言发生了变化，建议您重启当前的应用</string>
+</resources>
+

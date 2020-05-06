@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rv_security_information_certlist_title">证书信息</string>
+    <string name="rv_security_information_certlist_serialnumber">序列号</string>
+    <string name="rv_security_information_certlist_publisher">颁发者</string>
+    <string name="rv_security_information_certlist_startdate">证书起始日期</string>
+    <string name="rv_security_information_certlist_expiringdate">证书到期日期</string>
+    <string name="rv_security_information_certlist_email">邮件地址</string>
+
+    <!-- 	Documents Standard Encrypt -->
+    <string name="rv_doc_encrpty_standard_remove">移除安全设置</string>
+    <string name="rv_doc_encrpty_standard_ownerpassword_title">密码</string>
+    <string name="rv_doc_encrpty_standard_ownerpassword_failed">密码错误，请重试。</string>
+    <string name="rv_doc_encrypt_standard_ownerpassword_content">当前文档受保护，请输入一个权限密码。</string>
+    <string name="rv_doc_encrpty_standard_removepassword_confirm">您确定要删除文档中的安全设置？</string>
+    <string name="rv_doc_encrpty_standard_top_title">安全选项</string>
+    <string name="rv_doc_encrpty_standard_openfile">打开文档</string>
+    <string name="rv_doc_encrpty_standard_password">密码：</string>
+    <string name="rv_doc_encrpty_standard_must_input">必填</string>
+    <string name="rv_doc_encrpty_standard_owner_permission">添加文档限制</string>
+    <string name="rv_doc_encrpty_standard_bottom_tip1">-若启用“打开文档”，需要输入密码才能打开文档。</string>
+    <string name="rv_doc_encrpty_standard_bottom_tip2">-若“文档限制”被启用，需要输入密码才能移除保护，您可以选择对该文档的部分特定功能进行限制。</string>
+    <string name="rv_doc_encrpty_standard_same_password">该文档的打开密码和所有者密码不能相同，请在文档打开密码或者所有者密码域内输入一个不同的密码。</string><!-- Security PublicKey -->
+
+    <string name="rv_encrypt_dialog_title">加密</string>
+    <string name="rv_encrypt_dialog_description">应用加密后，文档的加密以及其它所有更改将会保存。</string>
+
+    <string name="rv_decrypt_dialog_title">解密</string>
+    <string name="rv_decrypt_dialog_description">应用解密后，文档的解密以及其它所有更改将会保存。</string>
+</resources>

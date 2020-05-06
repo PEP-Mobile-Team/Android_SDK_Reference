@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Digital Signature -->
+    <string name="rd_security_dsg_addSig">添加签名</string>
+    <string name="rv_security_dsg_verify">验证签名</string>
+    <string name="rv_security_dsg_verify_title">验证结果</string>
+    <string name="rv_security_dsg_verify_valid">数字签名有效。</string>
+    <string name="rv_security_dsg_verify_perm">该签名所覆盖的文档的修订本没有修改,但是有对文件做后续修改。</string>
+    <string name="rv_security_dsg_verify_otherState">其他原因，数字签名无效。</string>
+    <string name="rv_security_dsg_verify_invalid">数字签名无效。</string>
+    <string name="rv_security_dsg_verify_unknown">数字签名未知。</string>
+    <string name="rv_security_dsg_verify_expired">数字签名未知。\n用于验证颁发者的证书已过期。</string>
+    <string name="rv_security_dsg_verify_errorByteRange">数字签名无效因为错误的字节范围。</string>
+    <string name="rv_security_dsg_verify_error">数字证书验证时发生未知错误。</string>
+    <string name="rv_security_dsg_cert_publisher">证书颁发者：</string>
+    <string name="rv_security_dsg_cert_serialNumber">序列号：</string>
+    <string name="rv_security_dsg_cert_emailAddress">邮件地址：</string>
+    <string name="rv_security_dsg_cert_validityStarts">证书起始日期：</string>
+    <string name="rv_security_dsg_cert_validityEnds">证书到期日期：</string>
+    <string name="rv_security_dsg_cert_signedTime">签署日期：</string>
+    <string name="rv_certlist_note_searching">正在搜索&#8230;</string>
+    <string name="rv_certlist_note">选择证书</string>
+    <string name="rv_security_certlist_nocerificatefile">没有证书</string>
+    <string name="rv_security_certlist_inputpasswd">请输入密码</string>
+    <string name="rv_security_certlist_invalidpasswd">密码不正确，请重新输入</string>
+    <string name="rv_security_certlist_outdate">证书已过期</string>
+    <string name="rv_security_certlist_pubkey_invalidtype">此证书不能用于加密和解密。</string>
+    <string name="rv_security_certfrompfx_failed">获取证书失败</string>
+    <!-- Sign -->
+    <string name="rv_sign_waiting">正在处理&#8230;</string>
+    <string name="rv_sign_model">签名列表</string>
+    <string name="rv_sign_create">点击创建一个新的签名</string>
+
+    <string name="rv_sign_dialog_title">签名</string>
+    <string name="rv_sign_dialog_description">应用签名后，签名以及其它所有更改将会保存。</string>
+
+    <!-- dsg sign -->
+    <string name="sg_cert_add_text">选择并添加证书</string>
+    <string name="sg_cert_current_name_title">当前证书：</string>
+    <string name="sg_signer_title">签名</string>
+    <string name="sg_signer_dsg_group_title">证书签名</string>
+    <string name="sg_signer_handwriting_group_title">正常签名</string>
+    <string name="dsg_sign_succeed">签名成功。</string>
+    <string name="dsg_sign_failed">签名失败。</string>
+
+    <string name="no_permission">没有权限</string>
+
+    <string name="signature_ltv_attribute">签名已启用LTV</string>
+
+    <string name="rv_security_dsg_trust_cert_title">添加为可信任证书</string>
+    <string name="rv_security_dsg_trust_cert_tip">在验证签名或认证文档时，您希望信任该证书吗？</string>
+    <string name="rv_security_dsg_trust_cert_name">名称：</string>
+    <string name="rv_security_dsg_trust_cert_usage">主要目标用途：</string>
+    <string name="rv_security_dsg_verify_error_data">格式错误：不是一个PDF文件或该文件已损坏</string>
+
+    <string name="cert_key_usage">未指定</string>
+    <string name="cert_key_usage_data_encipherment">数据加密</string>
+    <string name="cert_key_usage_digital_signature">数字签名</string>
+    <string name="cert_key_usage_key_agreement">密钥协议</string>
+    <string name="cert_key_usage_key_cert_sign">密钥证书签名</string>
+    <string name="cert_key_usage_key_encipherment">密钥加密</string>
+    <string name="cert_key_usage_non_repudiation">不可否认性</string>
+    <string name="cert_key_usage_crl_sign">Crl签名</string>
+
+    <string name="rv_security_failed_to_view">查看版本失败</string>
+</resources>

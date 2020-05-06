@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rv_panel_bkot_item_bg"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="false" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/rd_bookmark_item_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="middle"
+                    android:focusable="false"
+                    android:text="Text"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_body2"/>
+
+                <EditText
+                    android:id="@+id/rd_bookmark_item_content_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rd_readingmark_item_et_border"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/rd_bookmark_item_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:ellipsize="middle"
+                    android:text="2015-06-26 12:05:20"
+                    android:textColor="@color/ux_text_color_body1_gray"
+                    android:textSize="@dimen/ux_text_height_body1" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/rd_panel_item_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@drawable/rd_bar_more_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rd_bookmark_item_moreView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:background="@color/ux_bg_color_toolbar_light"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+            <LinearLayout
+                android:id="@+id/rd_bookmark_item_ll_rename"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_bookmark_item_rename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/fb_rename_selector"/>
+                <TextView
+                    android:id="@+id/rd_bookmark_item_tv_rename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:text="@string/fx_string_rename"
+                    android:textSize="12sp"
+                    android:textColor="@color/dlg_bt_text_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rd_bookmark_item_ll_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_bookmark_item_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_annot_item_delete_selector"/>
+                <TextView
+                    android:id="@+id/rd_bookmark_item_tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:text="@string/fx_string_delete"
+                    android:textSize="12sp"
+                    android:textColor="@color/dlg_bt_text_selector"/>
+            </LinearLayout>
+            <!--<ImageView-->
+            <!--android:id="@+id/rd_bookmark_item_delete"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@drawable/_30500_fb_delete_selector"/>-->
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pb_scale_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:paddingTop="5dp"
+        android:paddingBottom="9dp"
+        android:text="@string/rd_pb_scale"
+        android:textColor="@color/ux_text_color_body2_gray"
+        android:textSize="@dimen/ux_text_height_menu" />
+
+    <LinearLayout
+        android:id="@+id/pb_scale_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:layout_marginBottom="5dp">
+        <EditText
+            android:id="@+id/pb_scale_percent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:padding="5dp"
+            android:background="@drawable/pb_fontstyle_tv_border"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/edittext_cursor_color_black"
+            android:text="0"
+            android:textColor="@color/ux_text_color_body2_gray"
+            android:textSize="12sp"/>
+        <LinearLayout
+            android:id="@+id/pb_scale_switch_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="3">
+            <ImageView
+                android:id="@+id/pb_scale_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/setting_off"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pb_separator_iv"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@color/ux_color_seperator_gray"/>
+</LinearLayout>

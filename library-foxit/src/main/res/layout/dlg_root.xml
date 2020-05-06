@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dlg_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/dlg_buttonview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dlg_contentview_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/dlg_buttonview"
+        android:background="@color/ux_text_color_title_light"
+        android:layout_marginTop="@dimen/ux_toolbar_height_phone"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/dlg_top_title_line_blue"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:src="@color/ux_bg_color_toolbar_colour"/>
+        <LinearLayout
+            android:id="@+id/dlg_contentview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dlg_top_title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+    </LinearLayout>
+
+</RelativeLayout>

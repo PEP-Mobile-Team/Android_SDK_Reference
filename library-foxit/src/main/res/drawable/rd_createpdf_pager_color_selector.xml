@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dip"/>
+            <stroke android:width="2dip"
+                    android:color="@color/ux_color_blue_ff179cd8">
+            </stroke>
+            <solid android:color="@color/ux_pager_color"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dip"/>
+            <stroke android:width="2dip"
+                    android:color="@color/ux_color_blue_ff179cd8">
+            </stroke>
+            <solid android:color="@color/ux_pager_color"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="4dip"/>
+            <stroke android:width="1dip"
+                    android:color="#FFE2E2E2">
+            </stroke>
+            <solid android:color="@color/ux_pager_color"/>
+        </shape>
+    </item>
+</selector>

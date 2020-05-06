@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:src="@color/rv_form_navigation_line" />
+
+    <RelativeLayout
+        android:id="@+id/rv_form_navigation_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="59dp"
+        android:layout_below="@+id/line"
+        android:background="@color/rv_form_navigation_bg">
+
+        <ImageView
+            android:id="@+id/rv_form_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+            android:scaleType="center"
+            android:src="@drawable/formfiller_pre" />
+
+        <ImageView
+            android:id="@+id/rv_form_next"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/rv_form_pre"
+            android:scaleType="center"
+            android:src="@drawable/formfiller_next" />
+
+        <TextView
+            android:id="@+id/rv_form_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="@dimen/ux_horz_right_margin_phone"
+            android:text="@string/formfiller_navigation_finish"
+            android:textColor="@drawable/form_navigation_button_bg_selector"
+            android:textSize="@dimen/ux_text_height_button" />
+
+        <TextView
+            android:id="@+id/rv_form_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/rv_form_finish"
+            android:gravity="center"
+            android:text="@string/formfiller_navigation_clear"
+            android:textColor="@drawable/form_navigation_button_bg_selector"
+            android:textSize="@dimen/ux_text_height_button" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+<GridView
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:numColumns="2"
+    android:verticalSpacing="8dp"
+    android:horizontalSpacing="4dp"
+    android:listSelector="@drawable/_feature_annot_stamp_selectrect"
+    android:id="@+id/rd_annot_item_stamp_gridview">
+</GridView>
+</LinearLayout>

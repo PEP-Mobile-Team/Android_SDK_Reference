@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rv_panel_bkot_item_bg"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/fx_font_courier"
+        android:textSize="@dimen/ux_text_height_body2"
+        android:textColor="@color/ux_text_color_body2_gray"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/pb_tv_fontItem"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb_iv_fontItem_selected"
+        android:src="@drawable/pb_selected"/>
+</LinearLayout>

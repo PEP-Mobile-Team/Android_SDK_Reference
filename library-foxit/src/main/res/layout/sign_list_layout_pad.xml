@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+>
+    <ExpandableListView
+        android:id="@+id/sign_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="@dimen/ux_toolbar_height_pad"
+        android:divider="@null">
+    </ExpandableListView>
+    <RelativeLayout
+        android:id="@+id/sign_list_top_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+</RelativeLayout>

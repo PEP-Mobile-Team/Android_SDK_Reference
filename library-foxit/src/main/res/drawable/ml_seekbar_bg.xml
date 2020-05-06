@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background" >
+        <shape>
+            <corners android:radius="1dp"/>
+            <gradient
+                android:startColor="@color/ux_color_toolbar_border_line"
+                android:centerColor="@color/ux_color_toolbar_border_line"
+                android:endColor="@color/ux_color_toolbar_border_line"
+                android:centerY="0.75"
+                android:angle="270"/>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress" >
+        <clip>
+            <shape>
+                <corners android:radius="1dp"></corners>
+                <gradient
+                    android:startColor="@color/ux_text_color_button_colour"
+                    android:centerColor="@color/ux_text_color_button_colour"
+                    android:endColor="@color/ux_text_color_button_colour"
+                    android:centerY="0.75"
+                    android:angle="270"/>
+            </shape>
+        </clip>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress" >
+        <clip>
+            <shape>
+                <corners android:radius="1dp"></corners>
+                <gradient
+                    android:startColor="@color/ux_text_color_button_colour"
+                    android:centerColor="@color/ux_text_color_button_colour"
+                    android:endColor="@color/ux_text_color_button_colour"
+                    android:centerY="0.75"
+                    android:angle="270"/>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

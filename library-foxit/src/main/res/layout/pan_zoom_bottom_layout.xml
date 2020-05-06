@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rd_panzoom_ll_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ux_toolbar_height_phone"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/search_bottom_bg"
+    android:gravity="center"
+    android:visibility="visible" >
+
+    <ImageView
+        android:id="@+id/rd_panzoom_ll_zoomout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="0dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="0dp"
+        android:src="@drawable/rd_panzoom_zoomout_pressed"/>
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="11"
+        android:id="@+id/rd_panzoom_ll_zoom"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:maxHeight="1.5dp"
+        android:minHeight="1.5dp"
+        android:thumb="@drawable/ml_seekbar_thumb_bt_selector"
+        android:progressDrawable="@drawable/ml_seekbar_bg" />
+
+    <ImageView
+        android:id="@+id/rd_panzoom_ll_zoomin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="0dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="0dp"
+        android:src="@drawable/rd_panzoom_zoomin_pressed"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/bottom_ll_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/rd_panzoom_ll_prevpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="0dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="0dp"
+        android:src="@drawable/rd_reflow_previous_selecter"/>
+    <ImageView
+        android:id="@+id/rd_panzoom_ll_nextpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="0dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="0dp"
+        android:src="@drawable/rd_reflow_next_selecter"/>
+
+</LinearLayout>

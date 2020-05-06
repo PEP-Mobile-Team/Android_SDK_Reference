@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/compare_result_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/compare_result_title"
+        android:paddingBottom="@dimen/compare_result_title"
+        android:text="@string/replaced"
+        android:gravity="center"
+        android:textSize="@dimen/ux_text_height_title"
+        android:textColor="@color/black"
+        android:background="@drawable/compare_title_bg_circle_corner_gray"/>
+
+    <ImageView
+        android:id="@+id/ml_iv_page_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:scaleType="fitXY"
+        android:src="@color/ux_color_seperator_gray" />
+
+    <TextView
+        android:id="@+id/compare_result_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/compare_content_bg_circle_corner_white"
+        android:gravity="left|top"
+        android:padding="16dp"
+        android:minLines="5"
+        android:textSize="15sp"
+        android:text="@string/replaced"
+        android:textColor="@color/ux_color_comparison_result_content_text"
+        android:singleLine="false"
+        android:scrollbars="vertical"
+        android:typeface="normal" />
+
+</LinearLayout>

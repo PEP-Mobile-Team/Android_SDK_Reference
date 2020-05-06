@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_signature_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#cccccc"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/panel_item_signature_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:paddingBottom="13dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="13dp"
+        android:scaleType="center"
+        android:src="@drawable/rv_panel_signature_type" />
+
+    <ImageView
+        android:id="@+id/panel_item_signature_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="8dp"
+        android:padding="13dp"
+        android:src="@drawable/rd_bar_more_selector" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/panel_item_signature_icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/panel_item_signature_more"
+        android:layout_toRightOf="@+id/panel_item_signature_icon"
+        android:padding="13dp"
+        android:layout_marginLeft="-8dp"
+        >
+
+        <TextView
+            android:id="@+id/panel_item_signature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/panel_item_signature_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:maxLines="1"
+            android:textSize="8sp"
+            android:textColor="#696969"
+            android:ellipsize="end"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/signature_more_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#d5d5d5"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/panel_more_tv_signature_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/rd_signature_item_sign_selector"
+            android:text="@string/rv_sign_dialog_title"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/panel_more_tv_signature_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="13dp"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/rd_signature_item_view_selector"
+            android:text="@string/rv_panel_signature_view"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/panel_more_tv_signature_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/rd_signature_item_verify_selector"
+            android:text="@string/rv_panel_signature_verify"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</RelativeLayout>

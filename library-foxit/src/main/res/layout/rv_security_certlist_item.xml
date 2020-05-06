@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rv_panel_bkot_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rv_security_certlist_item_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_list_item_height_1l_phone"
+        >
+
+        <CheckBox
+            android:id="@+id/rv_security_certlist_item_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:button="@drawable/rv_certlist_checkbox_selector"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+            android:layout_marginRight="14dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_security_certlist_item_info_iv"
+            android:src="@drawable/rv_certlist_info_selector"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/ux_horz_left_margin_phone"/>
+
+        <TextView
+            android:id="@+id/rv_security_certlist_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rv_security_certlist_item_cb"
+            android:layout_toLeftOf="@id/rv_security_certlist_item_info_iv"
+            android:layout_marginRight="14dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/ux_text_color_body2_dark"
+            android:clickable="false"
+            android:focusable="false"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textSize="@dimen/ux_text_height_body2"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rv_security_certlist_item_sigshape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/ux_text_color_title_light"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rv_security_certlist_item_sigshape_infolayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/rv_security_certlist_item_sigshape_info_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/rv_security_certlist_item_sigshape_info_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/rv_security_certlist_item_sigshape_info_rb" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv_security_certlist_item_sigshape_last1layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/rv_security_certlist_item_sigshape_last1_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/rv_security_certlist_item_sigshape_last1_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/rv_security_certlist_item_sigshape_last1_rb" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv_security_certlist_item_sigshape_last2layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/rv_security_certlist_item_sigshape_last2_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/rv_security_certlist_item_sigshape_last2_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/rv_security_certlist_item_sigshape_last2_rb" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/ux_color_seperator_gray"
+        >
+
+        </LinearLayout>
+
+
+</LinearLayout>

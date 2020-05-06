@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="@string/rv_page_present_thumbnail" />
+
+    <LinearLayout
+        android:id="@+id/thumbnail_edit_left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:background="@drawable/thumbnail_editlayout_bg"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/thumbnail_rotate_acw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbnail_rotate_anticlockwise" />
+        <ImageView
+            android:id="@+id/thumbnail_rotate_cw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbnail_rotate_clockwise" />
+        <ImageView
+            android:id="@+id/thumbnail_delete_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbnail_delete_self" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thumbnail_edit_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@drawable/thumbnail_editlayout_bg"
+        android:layout_alignParentRight="true" >
+        <ImageView
+            android:id="@+id/thumbnail_insert_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbnail_insert_left" />
+        <ImageView
+            android:id="@+id/thumbnail_insert_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbnail_insert_right" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/thumbnail_select_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/thumbnail_select_normal"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textSize="9sp"
+            android:background="@drawable/thumbnail_textview_background_normal"
+            android:maxLines="1"
+            android:text="page"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

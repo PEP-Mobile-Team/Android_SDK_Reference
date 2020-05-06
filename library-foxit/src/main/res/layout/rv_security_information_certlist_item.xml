@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ux_list_item_height_1l_phone"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_list_item_height_1l_phone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_security_information_certlist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="name"
+            android:textColor="@color/ux_text_color_body2_dark"
+            android:textSize="@dimen/ux_text_height_body2"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+            android:layout_marginRight="@dimen/ux_horz_left_margin_phone"/>
+
+        <TextView
+            android:id="@+id/rv_security_information_certlist_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="value"
+            android:layout_centerVertical="true"
+            android:textColor="@color/ux_text_color_body2_gray"
+            android:textSize="@dimen/ux_text_height_body2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/ux_horz_left_margin_phone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ux_color_seperator_gray"
+        >
+
+    </LinearLayout>
+
+</RelativeLayout>

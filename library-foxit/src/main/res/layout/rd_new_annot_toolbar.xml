@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/annot_bar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <View
+            android:id="@+id/annot_bar_top_solid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ux_toolbar_shadowLine_height"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/toolbar_shadow_bottom"/>
+
+        <View
+            android:id="@+id/annot_bar_top_solid2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ux_toolbar_solidLine_height"
+            android:layout_below="@+id/annot_bar_top_solid"
+            android:background="@color/ux_color_toolbar_solid_line"/>
+
+        <RelativeLayout
+            android:id="@+id/annot_bar_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/annot_bar_top_solid2"
+            android:background="@color/ux_color_toolbar_grey">
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/fx_string_linewidth"
+        android:textColor="@color/ux_text_color_body2_gray"
+        android:textSize="@dimen/ux_text_height_menu"
+        android:id="@+id/pb_tv_lineWidthTitle"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical">
+
+        <com.foxit.uiextensions.controls.propertybar.imp.ThicknessImage
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android_custom:borderColor="#ff00ff00"
+            android_custom:borderThickness="5dp"
+            android:id="@+id/pb_img_lineWidth_mypic"/>
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1px"
+            android:textColor="@color/ux_text_color_body2_gray"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/pb_tv_lineWidth_size"/>
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="11"
+            android:id="@+id/sb_lineWidth"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:maxHeight="1.5dp"
+            android:minHeight="1.5dp"
+            android:thumb="@drawable/ml_seekbar_thumb_bt_selector"
+            android:progressDrawable="@drawable/ml_seekbar_bg" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pb_separator_iv"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@color/ux_color_seperator_gray"/>
+</LinearLayout>

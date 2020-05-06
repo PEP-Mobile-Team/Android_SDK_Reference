@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fx_string_copy">复制</string>
+    <string name="fx_string_reply">回复</string>
+    <string name="fx_string_comment">注释</string>
+    <string name="fx_string_flatten">扁平化</string>
+    <string name="fx_string_color">颜色</string>
+    <string name="fx_string_opacity">不透明度</string>
+    <string name="fx_string_rotation">旋转</string>
+    <string name="fx_string_linewidth">线宽</string>
+    <string name="fx_string_edit">编辑</string>
+    <string name="fx_string_open">打开</string>
+    <string name="fx_string_rename">重命名</string>
+    <string name="fx_string_unit">单位</string>
+    <string name="fx_string_redaction">密文</string>
+    <string name="fx_string_apply">应用</string>
+    <string name="fx_string_warning">警告</string>
+
+    <!--annotation text  -->
+    <string name="annot_text_comment">注释</string>
+    <string name="annot_text_key">注册码</string>
+    <string name="annot_text_note">备注</string>
+    <string name="annot_text_help">帮助</string>
+    <string name="annot_text_newparagraph">新段落</string>
+    <string name="annot_text_paragraph">段落</string>
+    <string name="annot_text_insert">插入</string>
+
+    <!--FileAttachment-->
+    <string name="annot_fat_icontext_graph">图表</string>
+    <string name="annot_fat_icontext_paperclip">纸夹</string>
+    <string name="annot_fat_icontext_pushpin">图钉</string>
+    <string name="annot_fat_icontext_tag">标签</string>
+    <string name="annot_fat_filesizelimit_meg">操作失败，最大只能添加大小为%1$dMB的文件。</string>
+
+    <!--Annot menu-->
+    <string name="rd_am_item_copy_text">复制文本</string>
+    <string name="fx_string_highlight">高亮</string>
+    <string name="fx_string_underline">下划线</string>
+    <string name="fx_string_strikeout">删除线</string>
+    <string name="fx_string_squiggly">曲线</string>
+    <string name="fx_string_signature">签名</string>
+    <string name="fx_am_style">外观</string>
+    <string name="fx_distance">距离</string>
+    <string name="fx_string_note">备注</string>
+    <string name="fx_string_oval">椭圆</string>
+    <string name="fx_string_rectangle">矩形</string>
+    <string name="fx_string_insert_text">插入文本</string>
+    <string name="fx_string_replace_text">替换文本</string>
+    <string name="fx_string_eraser">橡皮</string>
+    <string name="fx_string_pencil">铅笔</string>
+    <string name="fx_string_arrow">箭头</string>
+    <string name="fx_string_line">线条</string>
+    <string name="fx_string_fileattachment">附件</string>
+
+    <string name="hm_clear">清除</string>
+    <string name="cloud_delete_tv">删除</string>
+    <string name="rd_comment_reply_list">注释</string>
+    <string name="rv_panel_annot_delete_tips">您确定你想要删除这些评论以及关联的回复？</string>
+    <string name="rd_panel_clear_comment">您确定您想要清除所有注释？</string>
+
+    <string name="fx_distance_unit">比例：</string>
+    <string name="fx_string_border_style">边框类型</string>
+
+    <!-- InsertText and ReplaceText-->
+    <string name="fx_string_inserttext">插入文本</string>
+    <string name="fx_string_replacetext">替换文本</string>
+    <string name="rd_pb_scale">与目标页的相对比例</string>
+
+    <string name="annot_continue_create">保持工具选择</string>
+    <string name="annot_single_create">单个注释</string>
+    <string name="mt_text_markup">文本标记</string>
+    <string name="mt_drawing">绘图</string>
+    <string name="mt_others">其它</string>
+    <string name="annot_link_alert_title">信息</string>
+    <string name="annot_link_alert_prompt">未找到文件，请检查是否该文件已经被移动，重命名或者被移除。</string>
+
+    <!-- Freetext -->
+    <string name="annot_tool_display_name_typewrite">打字机</string>
+    <string name="annot_tool_display_name_callout">注释框</string>
+    <string name="annot_tool_display_name_textbox">文本框</string>
+    <string name="fx_string_font">字体</string>
+    <string name="fx_string_fontsize">字号</string>
+    <!-- Font name -->
+    <string name="fx_font_courier">Courier</string>
+    <string name="fx_font_helvetica">Helvetica</string>
+    <string name="fx_font_times">Times</string>
+
+    <!--stamp-->
+    <string name="annot_tool_display_name_stamp">图章</string>
+    <string name="annot_stamp_standard">标准图章</string>
+    <string name="annot_stamp_signhere">在此签名</string>
+    <string name="annot_stamp_dynamic">动态图章</string>
+
+    <!--Screen annot-->
+    <string name="screen_annot_image">图片</string>
+    <string name="screen_annot_audio">音频</string>
+    <string name="screen_annot_video">视频</string>
+    <string name="pb_rotation_0">0&#176;</string>
+    <string name="pb_rotation_90">90&#176;</string>
+    <string name="pb_rotation_180">180&#176;</string>
+    <string name="pb_rotation_270">270&#176;</string>
+
+    <string name="recording_audio">录制音频</string>
+    <string name="audio_start">开始</string>
+
+    <string name="recording_video">录制视频</string>
+    <string name="remake_video">重录</string>
+
+    <string name="multimedia_play">播放</string>
+    <string name="fx_permission_denied">授权失败，请检测您的相关权限</string>
+
+    <string name="multimedia_type_not_support">暂不支持您选择的文件类型，请重新选择</string>
+    <string name="the_sdcard_not_exist">请确认SD卡已插入</string>
+    <string name="record_failed">录制失败</string>
+
+    <!--Polygon-->
+    <string name="fx_string_polygon">多边形</string>
+    <string name="fx_string_polygon_cloud">云形</string>
+    <string name="fx_string_polyLine">折线</string>
+    <string name="add_polygon_failed_hints">添加多边形时请确保输入至少3个顶点</string>
+    <string name="add_cloud_failed_hints">添加云形时请确保输入至少3个顶点</string>
+    <string name="add_polyline_failed_hints">添加折线时请确保输入至少2个顶点</string>
+
+    <!--Annot action callback-->
+    <string name="unsupported_to_submit_form_tip">不支持立即提交表单。</string>
+    <string name="unsupported_to_launch_url_tip">不支持启动URL。</string>
+    <string name="action_alert_msg">警告&#8230;%1$s</string>
+
+    <!-- Select multiple annotations-->
+    <string name="fx_string_multi_select">多选</string>
+
+    <!-- Redact -->
+    <string name="fx_string_overlay_title">文本</string>
+    <string name="fx_string_overlay_hint">请输入文字</string>
+    <string name="fx_string_apply_all">应用所有密文</string>
+    <string name="fx_string_redact_apply_toast">您将要永久删除选择的被标记为密文的内容。选择应用后，此项操作将不可恢复。您确认要继续吗？</string>
+</resources>

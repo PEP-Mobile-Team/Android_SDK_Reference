@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_toolbar_height_phone"
+        android:background="@color/ux_bg_color_toolbar_light"
+        >
+
+        <LinearLayout
+            android:id="@+id/attachment_view_topbar_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+            android:layout_marginRight="@dimen/ux_horz_right_margin_phone"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/attachment_view_topbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/rd_reflow_back_selector"
+
+                />
+
+            <TextView
+                android:id="@+id/attachment_view_topbar_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/rv_panel_title_attachment"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:textColor="@color/ux_text_color_title_dark"
+
+                android:textSize="@dimen/ux_text_height_title"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ux_color_shadow_solid_line"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/attachment_view_content_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>

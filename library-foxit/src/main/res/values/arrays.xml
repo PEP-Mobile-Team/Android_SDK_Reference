@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pageModes">
+        <item>1#Single</item>
+        <item>2#Reflow</item>
+        <item>3#Facing</item>
+        <item>4#CoverLeft</item>
+        <item>4#CoverMiddle</item>
+        <item>4#CoverRight</item>
+    </string-array>
+
+    <string-array name="zoomModes">
+        <item>1#FitWidth</item>
+        <item>2#FitHeight</item>
+        <item>3#FitPage</item>
+    </string-array>
+
+</resources>

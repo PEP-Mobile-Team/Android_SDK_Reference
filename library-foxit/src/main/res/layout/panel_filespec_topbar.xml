@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/panel_filespec_top_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_toolbar_height_phone"
+        android:background="@color/ux_text_color_subhead_colour"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/panel_filespec_top_close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+            android:paddingRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/panel_topbar_close_selector"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/rv_panel_files_pec_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/rv_panel_title_attachment"
+            android:textColor="@color/ux_text_color_title_light"
+            android:textSize="@dimen/ux_text_height_title"/>
+
+        <TextView
+            android:id="@+id/panel_filespec_top_clear_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="@string/rv_panel_title_add"
+            android:textColor="@color/hm_clear_color_selector"
+            android:textSize="@dimen/ux_text_height_button"/>
+    </RelativeLayout>
+</FrameLayout>

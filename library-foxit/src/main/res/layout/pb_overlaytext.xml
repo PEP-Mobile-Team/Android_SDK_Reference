@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pb_tv_overlay_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:paddingBottom="7dp"
+        android:paddingTop="5dp"
+        android:text="@string/fx_string_overlay_title"
+        android:textColor="@color/ux_text_color_body2_gray"
+        android:textSize="@dimen/ux_text_height_menu"/>
+
+    <EditText
+        android:id="@+id/pb_edit_overlaytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:background="@drawable/pb_fontstyle_tv_border"
+        android:hint="@string/fx_string_overlay_hint"
+        android:padding="5dp"
+        android:textColor="@color/ux_text_color_body2_gray"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/pb_separator_iv"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@color/ux_color_seperator_gray"/>
+</LinearLayout>

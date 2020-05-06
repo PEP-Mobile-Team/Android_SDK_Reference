@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_radian"
+              android:orientation="vertical">
+
+    <com.foxit.uiextensions.utils.UIMarqueeTextView
+        android:id="@+id/fx_dialog_title"
+        style="@style/fx_dialog_text_edit_title_style"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="@dimen/ux_text_height_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/ux_bg_color_toolbar_colour"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/fx_dialog_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="left"
+            android:textColor="@color/ux_color_black"
+            android:textSize="@dimen/ux_text_height_subhead"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"/>
+
+        <EditText
+            android:id="@+id/fx_dialog_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:focusable="true"
+            android:hint=""
+            android:textSize="@dimen/ux_text_height_subhead"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/ux_color_dialog_cutting_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fx_dialog_cancel"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/ux_dialog_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_background_selector"
+            android:text="@string/fx_string_cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ux_text_height_menu"/>
+
+        <View
+            android:id="@+id/fx_dialog_button_cutting_line"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/ux_color_dialog_cutting_line"/>
+
+        <Button
+            android:id="@+id/fx_dialog_ok"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/ux_dialog_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_background_selector"
+            android:text="@string/fx_string_ok"
+            android:textColor="@color/dlg_bt_text_selector"
+            android:textSize="@dimen/ux_text_height_menu"/>
+    </LinearLayout>
+
+</LinearLayout>

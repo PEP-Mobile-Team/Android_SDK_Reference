@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ux_text_color_title_light">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_comparison_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginTop="@dimen/ux_horz_left_margin_phone"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hm_comparison_mode"
+                    android:textColor="@color/black"
+                    android:textSize="30px"
+                    android:layout_gravity="left"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_comparison_mode_overlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/hm_comparison_selected_background">
+
+                        <ImageView
+                            android:id="@+id/iv_overlay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:src="@drawable/hm_comparison_overlay"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/hm_comparison_mode_overlay"
+                            android:textColor="@color/black"
+                            android:textSize="26px"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_comparison_mode_side_by_side"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="42dp"
+                        android:background="@drawable/hm_comparison_unselected_background">
+
+                        <ImageView
+                            android:id="@+id/iv_side_by_side"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hm_comparison_side_by_side"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/hm_comparison_mode_side_by_side"
+                            android:textColor="@color/black"
+                            android:textSize="26px" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_old_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginTop="@dimen/ux_horz_left_margin_phone"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hm_comparison_old_file"
+                    android:textColor="@color/black"
+                    android:textSize="30px"
+                    android:layout_gravity="left"/>
+
+                <LinearLayout
+                    android:id="@+id/rl_comparison_old_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_old_file_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ux_color_comparison_filename"
+                        android:textSize="26px"/>
+
+                    <TextView
+                        android:id="@+id/tv_old_file_selected_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hm_comparison_selected_color"
+                        android:textColor="@color/black"
+                        android:textSize="26px"
+                        android:layout_marginRight="@dimen/compare_horizontal_margin"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_comparison_old_file_selected_color"
+                        android:layout_width="26dip"
+                        android:layout_height="26dip"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="@color/ux_color_comparison_red">
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_new_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginTop="@dimen/ux_horz_left_margin_phone"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hm_comparison_new_file"
+                    android:textColor="@color/black"
+                    android:textSize="30px"
+                    android:layout_gravity="left"/>
+
+                <LinearLayout
+                    android:id="@+id/rl_comparison_new_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_new_file_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ux_color_comparison_filename"
+                        android:textSize="26px"/>
+
+                    <TextView
+                        android:id="@+id/tv_new_file_selected_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hm_comparison_selected_color"
+                        android:textColor="@color/black"
+                        android:textSize="26px"
+                        android:layout_marginRight="@dimen/compare_horizontal_margin"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_comparison_new_file_selected_color"
+                        android:layout_width="26dip"
+                        android:layout_height="26dip"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="@color/ux_color_comparison_green">
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ux_color_white"
+    android:orientation="vertical" >
+
+   <LinearLayout
+       android:baselineAligned="false"
+        android:layout_width="match_parent"
+       android:id="@+id/rv_security_information_tab_ly"
+        android:layout_height="41dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/rv_security_information_prm_ly"
+           android:layout_weight="1">
+       <TextView
+            android:id="@+id/rv_security_information_prmtitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/rv_doc_info_permission"
+            android:textColor="@color/ux_text_color_body2_dark"
+            android:textSize="@dimen/ux_horz_left_margin_phone"
+            android:background="@drawable/rv_panel_bkot_item_bg"/>
+
+       <LinearLayout
+           android:id="@+id/rv_security_information_prmline"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/ux_shadow_height"
+           android:background="@color/ux_color_black"
+           android:layout_alignParentBottom="true"></LinearLayout>
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/rv_security_information_detail_ly"
+           android:layout_weight="1">
+        <TextView
+            android:id="@+id/rv_security_information_detailtitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/rv_security_information_certlist_title"
+            android:textColor="@color/ux_text_color_body2_dark"
+            android:textSize="@dimen/ux_horz_left_margin_phone"
+            android:background="@drawable/rv_panel_bkot_item_bg"/>
+
+           <LinearLayout
+               android:id="@+id/rv_security_information_detailline"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/ux_shadow_height"
+               android:background="@color/ux_color_black"
+               android:layout_alignParentBottom="true"
+               android:visibility="invisible"></LinearLayout>
+       </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/select_title"
+        android:background="@drawable/toolbar_shadow_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:orientation="vertical"
+        >
+
+        <ListView
+            android:id="@+id/rv_security_information_listp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="#0000" 
+        >
+        </ListView>
+
+        <ListView
+            android:id="@+id/rv_security_information_listc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="#0000"
+            android:visibility="gone"
+           >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

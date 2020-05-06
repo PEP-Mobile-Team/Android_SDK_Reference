@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/panel_topbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_toolbar_height_phone"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_tabbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_tab_height"
+        android:layout_below="@id/panel_topbar_layout"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/panel_tabbar_layout"
+        android:orientation="vertical" >
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/panel_content_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <TextView
+            android:id="@+id/panel_content_noinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/ux_text_color_body2_dark"
+            android:textSize="@dimen/ux_text_height_body2"
+            android:text="@string/rv_no_panel_infomation"
+            android:background="@color/ux_color_white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panel_tabbar_layout"
+        android:orientation="vertical">
+        <View
+            android:background="@drawable/toolbar_shadow_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ux_shadow_height">
+        </View>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item type="id" name="sd_outline_chapter"></item>
+    <item type="id" name="sd_outline_more"></item>
+
+    <item name="rd_main_id" type="id"/>
+    <item type="id" name="fb_local_view_top"/>
+    <item type="id" name="fb_local_view_bottom"/>
+    <item type="id" name="fb_local_item_sign"/>
+    <item type="id" name="fb_local_item_signout"/>
+    <item type="id" name="fb_local_item_edit"/>
+    <item type="id" name="fb_local_item_edit_finish"/>
+    <item type="id" name="fb_local_item_edit_counter"/>
+    <item type="id" name="fb_local_item_edit_compare"/>
+
+
+    <!-- annotation-->
+    <item type="id" name="rd_jumppage_previous"></item>
+    <item type="id" name="rd_jumppage_next"></item>
+
+    <!-- signature-->
+    <item type="id" name="sig_create_back"/>
+    <item type="id" name="sig_create_property"/>
+    <item type="id" name="sig_create_delete"/>
+    <item type="id" name="sig_create_save"/>
+
+    <!-- AppKeyboardUtil -->
+    <item type="id" name="keyboard_util"/>
+
+    <item name="rd_panel_tab_item" type="id"/>
+
+    <item name="rd_show_animation_tag" type="id"/>
+    <item name="rd_hide_animation_tag" type="id"/>
+
+    <!-- compare -->
+    <item type="id" name="compare_back"/>
+    <item type="id" name="compare_show_legend"/>
+    <item type="id" name="compare_hide_legend"/>
+
+    </resources>

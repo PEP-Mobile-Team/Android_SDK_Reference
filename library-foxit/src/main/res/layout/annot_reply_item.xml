@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/annot_reply_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/annot_reply_list_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_list_item_height_2l_phone"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/rd_annot_relist_item_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/ux_horz_right_margin_phone"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/rd_bar_more_selector"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/rd_annot_relist_item_more"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/annot_reply_expand_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/annot_reply_item_add_selector" />
+
+                    <ImageView
+                        android:id="@+id/annot_iv_reply_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/annot_reply_selector" />
+
+                    <LinearLayout
+                        android:id="@+id/annot_reply_mid_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/annot_iv_reply_icon"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/annot_reply_author_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="middle"
+                            android:gravity="left|center_vertical"
+                            android:text="Xian Li"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_body2" />
+
+                        <TextView
+                            android:id="@+id/annot_reply_date_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="middle"
+                            android:text="2014/08/05 18:01:34"
+                            android:textColor="@color/ux_text_color_body1_gray"
+                            android:textSize="@dimen/ux_text_height_body1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/annot_reply_contents_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+                android:lines="2"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:text="This is contents\nThis is"
+                android:textColor="@color/ux_text_color_body2_dark"
+                android:textSize="@dimen/ux_text_height_annotation_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rd_annot_relist_item_moreview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:background="@color/ux_bg_color_toolbar_light"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/rd_annot_relist_item_ll_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_annot_relist_item_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_annot_item_reply_selector"/>
+                <TextView
+                    android:id="@+id/rd_annot_item_tv_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:text="@string/fx_string_reply"
+                    android:textSize="13sp"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rd_annot_item_ll_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_annot_item_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_annot_item_comment_selector"/>
+                <TextView
+                    android:id="@+id/rd_annot_item_tv_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:text="@string/fx_string_comment"
+                    android:textSize="13sp"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rd_annot_item_ll_redaction"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_annot_item_apply_redaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_annot_item_redaction_selector"/>
+                <TextView
+                    android:id="@+id/rd_annot_item_tv_apply_redaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:text="@string/fx_string_apply"
+                    android:textSize="13sp"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rd_annot_item_ll_flatten"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_annot_item_flatten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_annot_item_flatten_selector"/>
+                <TextView
+                    android:id="@+id/rd_annot_item_tv_flatten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:text="@string/fx_string_flatten"
+                    android:textSize="13sp"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rd_annot_item_ll_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/fb_item_func_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rd_annot_item_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_annot_item_delete_selector"/>
+                <TextView
+                    android:id="@+id/rd_annot_item_tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true"
+                    android:text="@string/fx_string_delete"
+                    android:textSize="13sp"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
