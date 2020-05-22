@@ -110,6 +110,7 @@ public class SearchView {
     private CheckBox mCheckBoxMatchWholeWords;
     private CheckBox mCheckBoxMatchCase;
     private int mSearchFlags = TextSearch.e_SearchNormal;
+    private ImageView mIv_left_search;
 
     protected SearchView(Context context, ViewGroup parent, PDFViewCtrl pdfViewCtrl) {
 
@@ -136,6 +137,8 @@ public class SearchView {
         mRd_search_ll_top = (LinearLayout) mSearchView.findViewById(R.id.rd_search_ll_top);
         mTop_et_content = (EditText) mSearchView.findViewById(R.id.top_et_content);
         mTop_iv_clear = (ImageView) mSearchView.findViewById(R.id.top_iv_clear);
+
+        mTop_iv_clear = (ImageView) mSearchView.findViewById(R.id.top_iv_clear);
         mTop_bt_cancel = (Button) mSearchView.findViewById(R.id.top_bt_cancel);
         mIvSearchSettings = (ImageView) mSearchView.findViewById(R.id.top_search_settings);
 
@@ -150,6 +153,8 @@ public class SearchView {
         mBottom_iv_next = (ImageView) mSearchView.findViewById(R.id.bottom_iv_next);
         mBottom_iv_result = (ImageView) mSearchView.findViewById(R.id.bottom_iv_result);
         mBottom_ll_shadow = (LinearLayout) mSearchView.findViewById(R.id.bottom_ll_shadow);
+
+        mIv_left_search = (ImageView) mSearchView.findViewById(R.id.iv_left_search);
 
         RelativeLayout.LayoutParams topParams = (RelativeLayout.LayoutParams) mRd_search_ll_top.getLayoutParams();
         RelativeLayout.LayoutParams bottomParams = (RelativeLayout.LayoutParams) mRd_search_ll_bottom.getLayoutParams();
@@ -234,6 +239,13 @@ public class SearchView {
                     }
                 }
                 mSearchSettingsPopup.dismiss();
+            }
+        });
+
+        mIv_left_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startSearch();
             }
         });
         return mSearchSettingsPopup;
