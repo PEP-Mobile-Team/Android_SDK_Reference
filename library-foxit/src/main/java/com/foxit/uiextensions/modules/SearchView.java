@@ -242,12 +242,6 @@ public class SearchView {
             }
         });
 
-        mIv_left_search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startSearch();
-            }
-        });
         return mSearchSettingsPopup;
     }
 
@@ -280,6 +274,13 @@ public class SearchView {
         mBottom_iv_next.setOnClickListener(searchModelListener);
         mBottom_iv_prev.setEnabled(false);
         mBottom_iv_next.setEnabled(false);
+
+        mIv_left_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startSearch();
+            }
+        });
 
         mRd_search_ll_bottom.setOnTouchListener(new View.OnTouchListener() {
 

@@ -545,11 +545,7 @@ class SquigglyAnnotHandler implements AnnotHandler {
         try{
             if (AppAnnotUtil.isLocked(annot))   {
                 int flags = annot.getFlags();
-                byte temp = new Byte(String.valueOf(flags));
-                int k = 5;
-                byte a = (byte)(temp & (~(0*1<<k)));
-                Log.e("aaaa", "resetMenuItems: "+a );
-                annot.setFlags(a);
+                annot.setFlags(flags-128);
             }
 
             if (!(AppAnnotUtil.isLocked(annot) || AppAnnotUtil.isReadOnly(annot))) {
