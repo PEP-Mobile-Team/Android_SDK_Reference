@@ -18,6 +18,7 @@ import android.graphics.PointF;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.text.ClipboardManager;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 
@@ -45,6 +46,7 @@ import com.foxit.uiextensions.utils.AppDmUtil;
 import com.foxit.uiextensions.utils.AppUtil;
 import com.foxit.uiextensions.utils.Event;
 
+import java.security.acl.AclEntry;
 import java.util.ArrayList;
 
 
@@ -540,9 +542,23 @@ class SquigglyAnnotHandler implements AnnotHandler {
 //            mMenuItems.add(AnnotMenu.AM_BT_COMMENT);
 //            mMenuItems.add(AnnotMenu.AM_BT_REPLY);
 //            mMenuItems.add(AnnotMenu.AM_BT_FLATTEN);
+        try{
+            if (AppAnnotUtil.isLocked(annot))   {
+                int flags = annot.getFlags();
+                byte temp = new Byte(String.valueOf(flags));
+                int k = 5;
+                byte a = (byte)(temp & (~(0*1<<k)));
+                Log.e("aaaa", "resetMenuItems: "+a );
+                annot.setFlags(a);
+            }
+
             if (!(AppAnnotUtil.isLocked(annot) || AppAnnotUtil.isReadOnly(annot))) {
                 mMenuItems.add(AnnotMenu.AM_BT_DELETE);
             }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
 //        }
     }
 
