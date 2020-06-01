@@ -1,0 +1,234 @@
+.main{
+    text-align: center;
+}
+.menu-title{
+    width: 100%;
+    height: 13%;
+    /* font-size: 28px; */
+    font-size: 150%;
+    color: #333333;
+    display: table;
+    position: absolute;
+}
+.menu-title span{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.menu-content{
+    margin: 11% auto 0;
+    width: 93.2%;
+    border: 1px solid #E6E6E6;
+    height: 80%;
+    border-radius: 8px;
+    text-align: left;
+}
+.menu-content .pull-left{
+    width: 27%;
+    border-right: 1px solid #E6E6E6;
+    height: 100%;
+    overflow: hidden;
+}
+.menu-content .pull-right{
+    width: 72.8%;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 35px;
+}
+.menu-content ul{
+    padding: 0;
+}
+.menu-content .pull-left ul{
+    width: 107%;
+    height: 100%;
+    overflow: auto;
+}
+.menu-content .pull-left li{
+    height: 50px;
+    line-height: 50px;
+    font-size: 120%;
+    color: #333333;
+    padding-left: 10%;
+    cursor: pointer;
+}
+.menu-content .pull-left li.active{
+    background: #D2F6FF;
+}
+.unit-title{
+    font-size:140%;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 0.43px;
+    margin-top: 3.4%;
+    height: auto;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+.unit-list{
+    font-size:120%;
+    color: #333;
+    letter-spacing: 0.39px;
+}
+.unit-list li{
+    margin-top: 2.3%;
+    cursor: pointer;
+}
+.pull-right-unit{
+    width: 102.5%;
+    height: 100%;
+    overflow: auto;
+}
+.v-cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+}
+@media screen and (max-width: 1280px){
+    .menu-title{
+        height: 100px;
+        font-size: 32px;
+    }
+    .menu-content{
+        margin-top: 100px;
+        background: #fff;
+    }
+    .menu-content .pull-left li{
+        height: 75px;
+        line-height: 75px;
+        font-size: 160%;
+    }
+    .menu-content .pull-left ul,.pull-right-unit{
+        width:100%;
+    }
+    .unit-title{
+        font-size: 180%;
+    }
+    .unit-list{
+        font-size: 150%;
+    }
+}
+/* 平板横屏 */
+@media screen and (max-width: 1024px){
+    .menu-title{
+        height: 80px;
+        font-size: 26px;
+    }
+    .menu-content{
+        margin-top: 80px;
+        background: #fff;
+    }
+    .menu-content .pull-left li{
+        height: 58px;
+        line-height: 58px;
+        font-size: 120%;
+    }
+    .menu-content .pull-left ul,.pull-right-unit{
+        width:100%;
+    }
+    .unit-title{
+        font-size: 140%;
+    }
+    .unit-list{
+        font-size: 120%;
+    }
+}
+
+/* 竖版 */
+/* @media screen and (max-width: 600px){
+    .menu-content .pull-left{
+        width: 35%;
+    }
+    .menu-content .pull-right{
+        width: 64.8%;
+    }
+} */
+.v-menu-title{
+    height:3.2rem;
+    font-size: 0.8rem;
+    color: #333333;
+    text-align: center;
+    padding-top: 1.5rem;
+    /* width: 50%; */
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+.v-menu-book{
+    width: 10.75rem;
+    height: 19.5rem;
+    padding: 0.7rem 0.6rem;
+    overflow-y: auto;
+    background: #FFFFFF;
+    border: 1px solid #09C6F6;
+    box-shadow: 0 0.1rem 3.75rem 0 rgba(0,0,0,0.05);
+    position: absolute;
+    top: 2.75rem;
+    left: 50%;
+    margin-left: -5.375rem;
+    font-size: 0.65rem;
+    color: #838383;
+    letter-spacing: 1px;
+    display: none;
+    z-index: 2;
+}
+.v-menu-book ul li{
+    border-bottom: 1px solid #EFEFEF;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+.v-menu-book ul li.active{
+    color: #00B5E1;
+}
+.v-menu-unit{
+    border-top: 1px solid #E6E6E6;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    text-align: left;
+    overflow-y: auto;
+    height: calc(100% - 3.2rem);
+}
+.v-menu-unit .v-unit{
+    background: #fff;
+    margin-bottom: 0.265rem;
+    padding: 0 0.45rem;
+}
+.v-unit-title{
+    min-height: 2.49rem;
+    font-size: 0.825rem;
+    color: #4A4A4A; 
+    font-weight: 600;
+    padding-top: 1.1rem;
+    padding-left: 0.5rem;
+}
+.v-unit-list ul{
+    margin: 0;
+}
+.v-unit-list li{
+    font-size: 0.7rem;
+    color: #4A4A4A;
+    border-top: 1px solid #EFEFEF;
+    padding: 0.45rem 0.5rem;
+    position: relative;
+}
+.v-unit-list li span{
+    font-size: 0.7rem;
+    color: #BDBDBD;
+    position: absolute;
+    right: 0rem;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+/* 平板竖版 */
+@media screen and (max-width: 768px){
+    .caret{
+        border-top: 0.3rem dashed;
+        border-right: 0.3rem solid transparent;
+        border-left: 0.3rem solid transparent;
+    }
+}

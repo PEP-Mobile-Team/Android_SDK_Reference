@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/practice.css">
+    <script>
+        document.documentElement.style.fontSize = Math.floor(20 * (document.documentElement.clientWidth / 375)) + 'px'
+    </script>
+    <title>测评练习</title>
+</head>
+<body>
+    <div class="main">
+        <!-- <div class="close-btn"></div> -->
+        <div class="return"><img src="./images/icon_back.png" alt=""></div>
+        <div class="title"></div>
+        <div class="title-line"></div>
+        <div class="content">
+            <ul>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <div class="action">
+            <div class="pause"><img src="./images/button_suspend_normal.png" alt=""></div>
+            <div class="play"><img src="./images/button_suspend_play.png" alt=""></div>
+            <div class="record"><img src="./images/button_voice_pressed.png" alt=""></div>
+            <div class="norecord"><img src="./images/button_voice_gray.png" alt=""></div>
+            <div class="repeat"><img src="./images/button_repeat_normal.png" alt=""></div>
+            <div class="result"><img src="./images/button_result.png" alt=""></div>
+            <div class="pulse"></div>
+            <div class="notice"><span>点击结束录音</span></div>
+        </div>
+        <audio src="" id="audio"></audio>
+        <div class="cover"></div>
+        <div class="countdown">3</div>
+        <div id="ossfile" hidden>你的浏览器不支持flash,Silverlight或者HTML5！</div>
+        <div id="container" hidden>
+            <a id="selectfiles" href="javascript:void(0);" class='btn'>选择文件</a>
+            <a id="postfiles" href="javascript:void(0);" class='btn'>开始上传</a>
+            <input type="button" name="ss" value="测试构造文件" onclick="add()"/>
+        </div>
+        <pre hidden id="console"></pre>
+    </div>
+
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./assets/js/pep-oss.min.js"></script>
+    <script type="text/javascript">
+   
+        function PageRotate(data){
+            var type = JSON.parse(data).type
+            if(type == 'ver'){
+                // 旋转为竖
+            }
+            if(type == 'hor'){
+                // 旋转为横
+            }
+        }
+        // CallFunc('getUserConfig','')
+        // GetUserConfig('{}')
+        var userId
+        var bookList
+        var dataUrl =''
+        var serverUrl
+        var accessKey
+        var accessToken
+        if(sessionStorage.getItem('userDataConfig')){
+            var data = JSON.parse(sessionStorage.getItem('userDataConfig'));
+            // console.log(data)
+            if(data.userId){
+                userId = data.userId
+            }
+            if(data.dataUrl){
+                dataUrl = data.dataUrl
+            }
+            if(data.serverUrl){
+                serverUrl = data.serverUrl
+            }
+            if(data.accessKey){
+                accessKey = data.accessKey
+            }
+            if(data.accessToken){
+                accessToken = data.accessToken 
+            }
+            
+        }
+
+                    //初始化上传sdk
+       var filters=({
+           mime_types : [ //只允许上传json
+               { title : "Json files", extensions : "json" }
+           ],
+           max_file_size : '10mb', //最大只能上传10mb的文件
+           prevent_duplicates : false //不允许选取重复文件
+       });
+       var ossDir = 'tools/'+userId+'/'+ accessKey +'/eval_tools/';
+       // accessToken="";//token
+       // console.log(ossDir)
+       initParams({
+           "filters":filters,
+           "ak":accessKey,
+           "userId":userId,
+           "serverUrl":serverUrl,
+           "ossDir":ossDir,
+           "access_token":accessToken
+       });
+       // console.log(serverUrl)     
+    </script>
+    <script src="./assets/js/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
+    <script src="./assets/js/upload.min.js"></script>   
+    <script src="./js/practice.js"></script>
+</body>
+</html>

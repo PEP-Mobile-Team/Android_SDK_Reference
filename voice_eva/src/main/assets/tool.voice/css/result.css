@@ -1,0 +1,488 @@
+.content {
+    height: 52%;
+    text-align: center;
+}
+
+.overall {
+    float: left;
+    background: #fff;
+    width: 25.5%;
+    height: 100%;
+    margin: 0 3.4% 0 2.5%;
+}
+
+.overall .icon {
+    width: 48.2%;
+    margin: -8.7% auto 7%;
+}
+
+.overall .icon1 {
+    display: none;
+}
+
+.overall .icon2 {
+    display: none;
+}
+
+.overall .icon img {
+    width: 100%;
+    height: auto;
+}
+
+.overall .res-desc {
+    font-size: 140%;
+    color: #666666;
+}
+
+.overall .res-txt {
+    font-size: 170%;
+    color: #333;
+    margin: 5% 0;
+}
+
+.overall .res-txt span {
+    font-size: 150%;
+    color: #F14646;
+    vertical-align: middle;
+}
+
+.overall .res-class {
+    font-size: 16.5px;
+    color: #666666;
+    margin-bottom: 3.5%;
+}
+
+.list {
+    float: right;
+    width: 64.5%;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 3.5%;
+    word-wrap:break-word; 
+    overflow: hidden;   
+}
+
+.list ul {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.list ul li {
+    padding: 0.3% 0;
+    font-size: 140%;
+    color: #333333;
+    width: 100%;
+}
+
+.list ul li img {
+    width: 4%;
+    height: auto;
+    margin-right: 1.8%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.content li .sentenceText {
+    display: inline-block;
+    width: 92%;
+    text-align: left;
+}
+.content li .sentenceText span{
+    float:left;
+}
+
+.content li .sentenceText >span{
+    float:none !important;
+}
+
+
+.content li .sentenceText .span-title {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-weight: 600;
+}
+.content li .sentenceText .span-title span{
+    float:none;
+}
+
+.list ul li .audio-text {
+    /* width: 92%; */
+    line-height: 160%;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+}
+
+.list ul li .audio-text .red,
+.sentenceText .red {
+    color: #F44440;
+}
+
+.list ul li .audio-text .orange,
+.sentenceText .orange {
+    color: #F19707;
+}
+
+.list ul li .audio-text .green,
+.sentenceText .green {
+    color: #14CE51;
+}
+
+.list-res-class {
+    font-size: 77%;
+    color: #666;
+    margin-left: 5.6%;
+    text-align: left;
+}
+
+.list-res-class div {
+    display: inline-block;
+    width: 25%;
+    margin: 1.2% 0% 1% 0;
+    text-align: center;
+}
+
+.list-res-class div.playR {
+    width: 19%;
+}
+
+.list ul li .list-res-class img {
+    width: 16%;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+.list ul li .list-res-class span {
+    vertical-align: middle;
+}
+
+.border-line {
+    width: 92%;
+    height: 1px;
+    margin: 1% 0 1.4% 6%;
+    background: #E6E6E6;
+}
+
+.line {
+    width: 94%;
+    height: 1px;
+    background: #98EAFF;
+    margin: 2.8% auto 0;
+}
+
+.res-legend {
+    text-align: center;
+    margin: 2% auto 4%;
+}
+
+.res-legend div {
+    display: inline-block;
+    font-size: 120%;
+    margin-right: 4%;
+}
+
+.res-legend div:nth-child(4) {
+    margin: 0;
+}
+
+.res-legend div span {
+    display: inline-block;
+    width: 20px;
+    height: 13px;
+    margin-right: 11px;
+}
+
+.res-legend div:nth-child(1) {
+    color: #14CE51;
+}
+
+.res-legend div:nth-child(2) {
+    color: #F19707;
+}
+
+.res-legend div:nth-child(3) {
+    color: #F44440;
+}
+
+.res-legend div:nth-child(1) span {
+    background-color: #14CE51;
+}
+
+.res-legend div:nth-child(2) span {
+    background-color: #F19707;
+}
+
+.res-legend div:nth-child(3) span {
+    background-color: #F44440;
+}
+.res-legend div:nth-child(4) span {
+    background-color: #000;
+}
+
+.action {
+    text-align: center;
+}
+
+.action div {
+    width: 18.5%;
+    display: inline-block;
+    background: #11CAF8;
+    border-radius: 66px;
+    text-align: center;
+    padding: 1.4% 0;
+    font-size: 140%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.action .next {
+    margin: 0 5.3%;
+}
+
+
+/* 平板横版 */
+
+@media screen and (max-width: 1280px) {
+    .title {
+        margin-bottom: 70px;
+    }
+    .content {
+        height: 58%;
+    }
+    .overall .res-desc {
+        font-size: 23px;
+    }
+    .overall .res-txt {
+        font-size: 28px;
+        margin: 35px 0 40px;
+    }
+    .overall .res-txt span {
+        font-size: 43px;
+    }
+    .overall .res-class {
+        font-size: 20px;
+    }
+    .overall .icon {
+        margin-bottom: 25px;
+    }
+    .res-legend {
+        margin-bottom: 2.5%;
+    }
+    .list ul li {
+        font-size: 22px;
+    }
+    .list-res-class {
+        font-size: 18px;
+    }
+    .list ul li img {
+        width: 3.5%;
+        margin-top: 0.4%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .list ul li img {
+        width: 4%;
+        margin-top: 0.8%;
+    }
+}
+
+
+/* 安卓二倍平板 */
+
+@media screen and (max-width: 1000px) {
+    .title {
+        margin-bottom: 40px;
+    }
+    .content {
+        height: 55%;
+    }
+    .overall .icon {
+        margin-bottom: 10px;
+    }
+    .overall .res-desc {
+        font-size: 20px;
+    }
+    .overall .res-txt {
+        margin: 0;
+        font-size: 24px;
+    }
+    .overall .res-txt span {
+        font-size: 38px;
+    }
+    .overall .res-class {
+        font-size: 18px;
+        margin-bottom: 2.5%;
+    }
+    .res-legend {
+        margin-bottom: 2%;
+    }
+}
+
+
+/* 平板竖版 */
+
+@media screen and (max-width: 768px) {
+    .title {
+        margin-bottom: 55px;
+    }
+    .content {
+        height: 700px;
+    }
+    .overall {
+        float: none;
+        width: 688px;
+        height: 290px;
+        margin: 0 auto 10px;
+        position: relative;
+    }
+    .overall .icon {
+        width: 138px;
+        height: 138px;
+        margin: 0;
+        position: absolute;
+        top: -29px;
+        left: 50%;
+        margin-left: -69px;
+    }
+    .list {
+        float: none;
+        background: #fff;
+        padding: 10px 60px 20px 20px;
+        width: 688px;
+        height: 410px;
+        margin: 0 auto;
+    }
+    .overall .res-txt {
+        margin: 8px 0;
+    }
+    .overall .res-class {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .overall .res-class:nth-last-child(2) {
+        margin: 0 90px;
+    }
+    .overall .res-desc {
+        padding-top: 130px;
+    }
+    .line {
+        margin-top: 40px;
+    }
+    .res-legend {
+        margin: 19px auto 28px;
+    }
+    .res-legend div {
+        font-size: 20px;
+    }
+    .action div {
+        width: 189px;
+        height: 59px;
+        font-size: 22px;
+        padding: 15px 0;
+    }
+}
+
+
+/* 手机 */
+
+@media screen and (max-width: 650px) {
+    .title {
+        margin-bottom: 0.55rem;
+    }
+    .title-line {
+        margin-bottom: 1.275rem;
+    }
+    .content {
+        /* height: auto; */
+        height: 68%;
+    }
+    .overall {
+        width: 17.75rem;
+        height: 7.975rem;
+        margin-bottom: 0.25rem;
+    }
+    .overall .icon {
+        width: 3.575rem;
+        height: 3.575rem;
+        top: -0.825rem;
+        margin-left: -1.79rem;
+    }
+    .overall .res-desc {
+        font-size: 0.8rem;
+        color: #FA7665;
+        padding-top: 3.2rem;
+    }
+    .overall .res-txt {
+        font-size: 0.95rem;
+        margin: 0.25rem 0 0.15rem;
+    }
+    .overall .res-txt span {
+        font-size: 1.35rem;
+        vertical-align: middle;
+        margin-top: -0.125rem;
+        display: inline-block;
+    }
+    .overall .res-class {
+        font-size: 0.7rem;
+    }
+    .overall .res-class:nth-last-child(2) {
+        margin: 0 1.6rem;
+    }
+    .list {
+        width: 17.75rem;
+        /* height: 13.45rem; */
+        height: 57%;
+        padding: 0.4rem 0.4rem 0.2rem 0.25rem
+    }
+    .list ul li {
+        font-size: 0.7rem;
+    }
+    .list ul li img {
+        width: 0.75rem;
+        margin-right: 0.425rem;
+    }
+    .list-res-class {
+        font-size: 0.6rem;
+    }
+    .list ul li .list-res-class img {
+        width: 0.675rem;
+        margin-right: 0.15rem;
+    }
+    .border-line {
+        width: 92%;
+        margin: 0.5% 0 1% 5.5%
+    }
+    .line {
+        margin-top: 0.25rem;
+    }
+    .res-legend {
+        margin: 0.45rem auto 0.775rem;
+    }
+    .res-legend div {
+        font-size: 0.6rem;
+    }
+    .res-legend div span {
+        width: 0.5rem;
+        height: 0.325rem;
+        margin-right: 0.25rem;
+    }
+    .res-legend div:nth-child(2) {
+        margin: 0 0.5rem;
+    }
+    .res-legend div:nth-child(1) {
+        margin: 0 0
+    }
+    .res-legend div:nth-child(3) {
+        margin: 0 0.5rem;
+    }
+    .action div {
+        width: 4.725rem;
+        height: 1.925rem;
+        font-size: 0.7rem;
+        line-height: 1.925rem;
+        padding: 0;
+    }
+}

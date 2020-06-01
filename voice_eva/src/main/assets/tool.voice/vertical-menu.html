@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <script>
+        document.documentElement.style.fontSize = Math.floor(20 * (document.documentElement.clientWidth / 375)) + 'px'
+    </script>
+    <title>选择测评内容</title>
+</head>
+<body>
+    <div class="main">
+        <!-- <div class="close-btn"></div> -->
+        <div class="return"><img src="./images/icon_back.png" alt=""></div>
+        <div class="v-menu-title">
+            <span></span>
+            <span class="caret"></span>
+        </div>
+        <div class="v-cover"></div>
+        <div class="v-menu-book">
+            <ul>
+            </ul>
+        </div>
+        <div class="v-menu-unit">
+        </div>
+    </div>
+    <script>
+        function callHtml(fnname,data){
+            eval(fnname+"(data)")
+        }
+
+        function PageRotate(data){
+            var type = JSON.parse(data).type
+            if(type == 'ver'){
+                // 旋转为竖
+                location.href = "./vertical-menu.html?bid="+bid
+            }
+            if(type == 'hor'){
+                // 旋转为横
+                location.href = "./horizontal-menu.html?bid="+bid
+            }
+        }
+    </script>
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
