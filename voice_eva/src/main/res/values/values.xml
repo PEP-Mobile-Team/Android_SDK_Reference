@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">EvaluateSdk</string>
-    <string name="permission_storage_audio">在设置－应用－权限中开启录音权限，以正常使用功能</string>
-</resources>
