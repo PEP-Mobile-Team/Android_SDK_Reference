@@ -23,9 +23,13 @@ public class EditAnnotTask extends Task {
         super(new CallBack() {
             @Override
             public void result(Task task) {
-                EditAnnotTask task1 = (EditAnnotTask) task;
-                if (callBack != null) {
-                    callBack.result(task1.mEvent, task1.bSuccess);
+                try{
+                    EditAnnotTask task1 = (EditAnnotTask) task;
+                    if (callBack != null) {
+                        callBack.result(task1.mEvent, task1.bSuccess);
+                    }
+                }catch (Exception e){
+                    e.printStackTrace();
                 }
             }
         });

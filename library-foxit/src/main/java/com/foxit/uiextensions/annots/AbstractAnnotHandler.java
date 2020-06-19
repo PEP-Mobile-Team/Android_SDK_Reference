@@ -558,22 +558,26 @@ public abstract class AbstractAnnotHandler implements AnnotHandler, PropertyBar.
         EditAnnotTask task = new EditAnnotTask(addEvent, new Event.Callback() {
             @Override
             public void result(Event event, boolean success) {
-                if (success) {
-                    ((UIExtensionsManager)mPdfViewCtrl.getUIExtensionsManager()).getDocumentManager().onAnnotAdded(page, annot);
-                    if (addUndo) {
-                        ((UIExtensionsManager)mPdfViewCtrl.getUIExtensionsManager()).getDocumentManager().addUndoItem(addEvent.mUndoItem);
-                    }
-                    if (mPdfViewCtrl.isPageVisible(pageIndex)) {
-                        RectF pvRect = getBBox(mPdfViewCtrl, annot);
-                        final Rect tv_rect1 = new Rect();
-                        pvRect.roundOut(tv_rect1);
-                        mPdfViewCtrl.refresh(pageIndex, tv_rect1);
+                try{
+                    if (success) {
+                        ((UIExtensionsManager)mPdfViewCtrl.getUIExtensionsManager()).getDocumentManager().onAnnotAdded(page, annot);
+                        if (addUndo) {
+                            ((UIExtensionsManager)mPdfViewCtrl.getUIExtensionsManager()).getDocumentManager().addUndoItem(addEvent.mUndoItem);
+                        }
+                        if (mPdfViewCtrl.isPageVisible(pageIndex)) {
+                            RectF pvRect = getBBox(mPdfViewCtrl, annot);
+                            final Rect tv_rect1 = new Rect();
+                            pvRect.roundOut(tv_rect1);
+                            mPdfViewCtrl.refresh(pageIndex, tv_rect1);
+                        }
+
                     }
 
-                }
-
-                if (result != null) {
-                    result.onResult(success, page, annot, null);
+                    if (result != null) {
+                        result.onResult(success, page, annot, null);
+                    }
+                }catch (Exception e){
+                    e.printStackTrace();
                 }
             }
         });
