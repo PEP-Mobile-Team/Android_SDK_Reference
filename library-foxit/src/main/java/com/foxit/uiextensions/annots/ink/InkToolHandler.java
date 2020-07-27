@@ -234,7 +234,7 @@ public class InkToolHandler extends AbstractToolHandler {
     float mbx, mby, mcx, mcy, mex, mey;
     PointF tv_pt = new PointF();
     RectF tv_invalid = new RectF();
-
+    boolean isEndTouch;
     @Override
     public boolean onTouchEvent(int pageIndex, MotionEvent e) {
         PointF point = new PointF(e.getX(), e.getY());
@@ -243,14 +243,18 @@ public class InkToolHandler extends AbstractToolHandler {
         int action = e.getAction();
         switch (action) {
             case MotionEvent.ACTION_DOWN:
+                isEndTouch= false;
                 if (!mTouchCaptured) {
                     if (mCapturedPage == -1) {
                         mTouchCaptured = true;
                         mCapturedPage = pageIndex;
                     } else if (pageIndex == mCapturedPage) {
                         mTouchCaptured = true;
-                    } else {
-
+                    } else if (mPdfViewCtrl.getPageLayoutMode()== PDFViewCtrl.PAGELAYOUTMODE_FACING){
+                        // addAnnot(null);
+                        mPathList.clear();
+                        mTouchCaptured = true;
+                        mCapturedPage = pageIndex;
                     }
                     if (mTouchCaptured) {
                         mPath = new Path();
@@ -343,6 +347,7 @@ public class InkToolHandler extends AbstractToolHandler {
                         mLine = null;
                         mTouchCaptured = false;
                         mLastPt.set(0, 0);
+                        isEndTouch = true;
                     }
                     return true;
                 }
@@ -375,6 +380,10 @@ public class InkToolHandler extends AbstractToolHandler {
             }
             if (mPath != null) {
                 canvas.drawPath(mPath, mPaint);
+            }
+            if(isEndTouch){
+                addAnnot(null);
+                isEndTouch= false;
             }
         }
     }
