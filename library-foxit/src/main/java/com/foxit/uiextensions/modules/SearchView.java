@@ -45,6 +45,7 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.foxit.sdk.PDFException;
 import com.foxit.sdk.PDFViewCtrl;
@@ -483,7 +484,8 @@ public class SearchView {
 
         @Override
         public void afterTextChanged(Editable s) {
-            if (s.length() > 0) {
+            String trim = s.toString().trim();
+            if (trim.length() > 0) {
                 mTop_iv_clear.setVisibility(View.VISIBLE);
                 mIsBlank = false;
             } else {
@@ -542,6 +544,8 @@ public class SearchView {
                     mViewCenterRight.startAnimation(animationR2L);
                 }
             }
+        }else{
+            Toast.makeText(mContext,"请输入要查找的文本",Toast.LENGTH_SHORT).show();
         }
     }
 
