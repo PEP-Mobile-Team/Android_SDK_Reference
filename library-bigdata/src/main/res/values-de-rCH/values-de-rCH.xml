@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="fx_string_ok">OK</string>
-    <string name="not_support_oom_recovery">Diese Art des Öffnens des Dokuments unterstützt keine OOM-Wiederherstellung.</string>
-    <string name="out_of_memory_and_recovering">Nicht genügend Speicher, Verarbeitung…</string>
-    <string name="out_of_memory_but_cannot_recovered">Speicherwiederherstellung fehlgeschlagen.</string>
-    <string name="rv_sign_waiting">Verarbeitung…</string>
-</resources>

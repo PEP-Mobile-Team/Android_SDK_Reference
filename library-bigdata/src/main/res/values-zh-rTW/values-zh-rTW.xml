@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="fx_string_ok">確定</string>
-    <string name="not_support_oom_recovery">當前檔案的打開管道暫不支持記憶體回收</string>
-    <string name="out_of_memory_and_recovering">手機記憶體不足，正在回收中…</string>
-    <string name="out_of_memory_but_cannot_recovered">記憶體回收失敗</string>
-    <string name="rv_sign_waiting">正在處理…</string>
-</resources>

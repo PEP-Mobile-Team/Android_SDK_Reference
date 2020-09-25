@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="fx_string_ok">OK</string>
-    <string name="not_support_oom_recovery">Текущий документ не поддерживает восстановление памяти.</string>
-    <string name="out_of_memory_and_recovering">Недостаточно памяти,Обработка…</string>
-    <string name="out_of_memory_but_cannot_recovered">Восстановление памяти не удалось.</string>
-    <string name="rv_sign_waiting">Обработка…</string>
-</resources>

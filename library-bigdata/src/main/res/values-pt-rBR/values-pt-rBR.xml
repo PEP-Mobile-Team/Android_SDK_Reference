@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="fx_string_ok">OK</string>
-    <string name="not_support_oom_recovery">Esta forma de abrir o documento não suporta reciclagem de memória.</string>
-    <string name="out_of_memory_and_recovering">Memória insuficiente, Processando….</string>
-    <string name="out_of_memory_but_cannot_recovered">Recuperação de memória falhou.</string>
-    <string name="rv_sign_waiting">Processando…</string>
-</resources>
