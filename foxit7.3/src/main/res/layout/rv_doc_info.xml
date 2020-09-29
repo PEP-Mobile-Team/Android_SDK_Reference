@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ux_color_white" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/rv_doc_info_root_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/rv_doc_info_fileinfo_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                    android:paddingRight="@dimen/ux_horz_right_margin_phone"
+                    android:text="@string/rv_doc_info_fileinfo"
+                    android:textColor="@color/ux_text_color_subhead_colour"
+                    android:textSize="@dimen/ux_text_height_menu" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="1"
+                    android:gravity="left" >
+
+                    <TableRow
+                        android:id="@+id/table_row_file_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                        android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                        <TextView
+                            android:id="@+id/rv_doc_info_fileinfo_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fm_history_file_name"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+
+                        <com.foxit.uiextensions.utils.UIMarqueeTextView
+                            android:id="@+id/rv_doc_info_fileinfo_name_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:paddingRight="16dip"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+                    </TableRow>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:contentDescription="@string/rv_doc_info"
+                        android:src="@color/ux_color_seperator_gray" />
+
+                    <TableRow
+                        android:id="@+id/table_row_file_path"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                        android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                        <TextView
+                            android:id="@+id/rv_doc_info_fileinfo_path"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fm_history_file_path"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+
+                        <com.foxit.uiextensions.utils.UIMarqueeTextView
+                            android:id="@+id/rv_doc_info_fileinfo_path_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:paddingRight="16dip"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+                    </TableRow>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:contentDescription="@string/rv_doc_info"
+                        android:src="@color/ux_color_seperator_gray" />
+
+                    <TableRow
+                        android:id="@+id/table_row_file_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                        android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                        <TextView
+                            android:id="@+id/rv_doc_info_fileinfo_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fm_history_file_size"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+
+                        <com.foxit.uiextensions.utils.UIMarqueeTextView
+                            android:id="@+id/rv_doc_info_fileinfo_size_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:paddingRight="16dip"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+                    </TableRow>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:contentDescription="@string/rv_doc_info"
+                        android:src="@color/ux_color_seperator_gray" />
+
+                    <TableRow
+                        android:id="@+id/table_row_file_author"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                        android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                        <TextView
+                            android:id="@+id/rv_doc_info_fileinfo_author"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fm_history_pdf_author"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+
+                        <com.foxit.uiextensions.utils.UIMarqueeTextView
+                            android:id="@+id/rv_doc_info_fileinfo_author_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:paddingRight="16dip"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+                    </TableRow>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:contentDescription="@string/rv_doc_info"
+                        android:src="@color/ux_color_seperator_gray" />
+
+                    <TableRow
+                        android:id="@+id/table_row_file_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                        android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                        <TextView
+                            android:id="@+id/rv_doc_info_fileinfo_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fm_history_pdf_subject"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+
+                        <com.foxit.uiextensions.utils.UIMarqueeTextView
+                            android:id="@+id/rv_doc_info_fileinfo_subject_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:paddingRight="16dip"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+                    </TableRow>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:contentDescription="@string/rv_doc_info"
+                        android:src="@color/ux_color_seperator_gray" />
+
+                    <TableRow
+                        android:id="@+id/table_row_create_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                        android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                        <TextView
+                            android:id="@+id/rv_doc_info_fileinfo_createdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fm_history_file_create_time"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+
+                        <com.foxit.uiextensions.utils.UIMarqueeTextView
+                            android:id="@+id/rv_doc_info_fileinfo_createdate_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:paddingRight="16dip"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+                    </TableRow>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:contentDescription="@string/rv_doc_info"
+                        android:src="@color/ux_color_seperator_gray" />
+
+                    <TableRow
+                        android:id="@+id/table_row_modify_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                        android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                        <TextView
+                            android:id="@+id/rv_doc_info_fileinfo_moddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fm_history_file_last_modify_time"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+
+                        <com.foxit.uiextensions.utils.UIMarqueeTextView
+                            android:id="@+id/rv_doc_info_fileinfo_moddate_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                            android:gravity="center_vertical|left"
+                            android:paddingRight="16dip"
+                            android:textColor="@color/ux_text_color_body2_dark"
+                            android:textSize="@dimen/ux_text_height_menu" />
+                    </TableRow>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:contentDescription="@string/rv_doc_info"
+                        android:src="@color/ux_color_seperator_gray" />
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rv_doc_info_security"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                <TextView
+                    android:id="@+id/rv_doc_info_security_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/rv_doc_info_security"
+                    android:textColor="@color/ux_text_color_subhead_colour"
+                    android:textSize="@dimen/ux_text_height_menu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/rv_doc_info_security_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/rv_doc_info"
+                        android:gravity="center"
+                        android:src="@drawable/fx_item_detail" />
+
+                    <TextView
+                        android:id="@+id/rv_doc_info_security_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/rv_doc_info_security_no"
+                        android:textColor="@color/ux_text_color_body2_dark"
+                        android:textSize="@dimen/ux_text_height_menu"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/rv_doc_info_tracker_divide0"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/rv_doc_info"
+                android:src="@color/ux_color_seperator_gray" />
+
+            <ImageView
+                android:id="@+id/rv_doc_info_tracker_divide"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/rv_doc_info"
+                android:src="@color/ux_color_seperator_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

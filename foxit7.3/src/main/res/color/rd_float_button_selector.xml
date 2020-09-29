@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/ux_text_color_button_disable" android:state_focused="true"/>
+    <item android:color="@color/ux_bg_color_toolbar_colour" android:state_focused="false"/>
+</selector>

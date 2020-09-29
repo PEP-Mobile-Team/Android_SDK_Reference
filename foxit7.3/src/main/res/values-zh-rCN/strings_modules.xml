@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--AccountModule -->
+    <string name="sign_out_tips">您确定要退出吗？</string>
+
+    <!-- CropModule -->
+    <string name="fx_string_crop_title">裁剪</string>
+    <string name="fx_string_nocrop">退出</string>
+    <string name="fx_string_crop">手动裁剪</string>
+    <string name="fx_string_smartcrop">自动裁剪</string>
+    <string name="fx_string_detect">自动检测</string>
+
+    <!-- Pan and Zoom -->
+    <string name="fx_string_pan_zoom_title">平移和缩放</string>
+    <string name="not_window_permissions_tips">您的手机未被授予浮动窗口权限，请打开并重试。</string>
+    <string name="fx_turn_on">好的，马上打开</string>
+    <string name="fx_turn_later">稍后</string>
+
+    <!-- Snapshot -->
+    <string name="failed_to_save_snapshot">截屏失败</string>
+    <string name="the_snapshot_save_path">图片已保存至 %1$s 中</string>
+
+    <!-- PageNavigationModule -->
+    <string name="rv_gotopage_error_toast">请输入正确的页码</string>
+    <string name="rd_gotopage_toolbar_go">跳转</string>
+
+    <!-- FormFillerModule -->
+    <string name="fx_form_item_list">选项列表</string>
+    <string name="fx_combox_custom_text">允许用户输入自定义文本</string>
+    <string name="fx_listbox_multiple_text">允许多选</string>
+    <string name="fx_no_item_tips">点击这里添加项目</string>
+
+    <!-- form navigation  Resource -->
+    <string name="formfiller_navigation_clear">重置域</string>
+
+    <!-- Thumbnail -->
+    <string name="fx_string_rotate">旋转</string>
+    <string name="fx_string_extract">提取</string>
+    <string name ="fx_string_extract_to">提取</string>
+    <string name ="rv_page_rotate_cw">正在旋转页面&#8230;</string>
+    <string name ="rv_page_delete">正在删除页面&#8230;</string>
+    <string name ="rv_page_import">正在导入页面&#8230;</string>
+    <string name ="rv_page_extract">正在提取页面&#8230;</string>
+    <string name ="rv_page_extract_error">提取页面失败</string>
+    <string name ="rv_page_import_error">导入页面失败</string>
+    <string name ="rv_page_remove_error">删除页面失败</string>
+    <string name ="rv_page_rotate_error">旋转页面失败</string>
+    <string name="xfa_not_support_move_toast">该文档类型暂不支持交换页面</string>
+    <string name="xfa_not_support_to_edit_toast">暂不支持编辑该类型文档</string>
+    <string name="xfa_not_supported_add_image_toast">该文档类型暂不支持添加图片</string>
+    <string name="cinflicted_with_current_doc_toast">与当前文档冲突，请重新输入!!!</string>
+    <string name="the_file_can_not_replace_toast">%1$s 替换失败.</string>
+    <string name="rv_page_delete_all_thumbnail">不允许删除所有页面</string>
+    <string name="rv_page_delete_thumbnail">确定要删除所选页吗？注意该操作无法撤消</string>
+    <string name="createpdf_add_page_title">添加页</string>
+    <string name="createpdf_new_page_blank">空白</string>
+    <string name="createpdf_new_page_lined">纹理</string>
+    <string name="createpdf_new_page_grid">网格</string>
+    <string name="createpdf_new_page_graph">图表</string>
+    <string name="createpdf_new_page_music">音乐</string>
+    <string name="createpdf_new_pagenum">页数</string>
+    <string name="createpdf_new_pagesize">页面大小</string>
+    <string name="createpdf_new_pagecolor">页面颜色</string>
+    <string name="createpdf_new_pageorientation">方向</string>
+    <string name="createpdf_new_ori_partrait">纵向</string>
+    <string name="createpdf_new_ori_landspace">横向</string>
+    <string name="createpdf_new_pagesize_letter">信纸</string>
+    <string name="createpdf_new_pagesize_A3">A3</string>
+    <string name="createpdf_new_pagesize_A4">A4</string>
+    <string name="createpdf_new_pagesize_legal">法律专用纸</string>
+    <string name="createpdf_new_pagesize_ledger">账簿</string>
+    <string name="fx_original_color">当前</string>
+    <string name="fx_current_color">最新</string>
+    <string name="fx_theme_color">主题色</string>
+
+    <!-- ReadingBookmarkModule -->
+    <string name="fx_page_book_mark">页码 %1$d</string>
+
+    <!--  Search -->
+    <string name="search_hint">输入要查找的文本</string>
+    <string name="search_find_number">总共找到: %1$d</string>
+    <string name="searching_find_number">正在搜索&#8230;\n已找到: %1$d</string>
+    <string name="search_page_number">第 %1$s 页</string>
+    <string name="search_whole_words">整词匹配</string>
+    <string name="search_case_sensitive">区分大小写</string>
+    <string name="search_in_internet">在网络上搜索</string>
+
+    <!-- Compare -->
+    <string name="legend">图例</string>
+    <string name="show_legend">显示图例</string>
+    <string name="hide_legend">隐藏图例</string>
+    <string name="replaced">取代</string>
+    <string name="inserted">插入</string>
+    <string name="deleted">删除</string>
+    <string name="unsupported_file_format">不支持此文件格式</string>
+    <string name="compare_diff_file">请选择两个不同文档进行对比</string>
+    <string name="compare_progress">文件比较中&#8230;</string>
+
+    <!-- TTS -->
+    <string name="rd_tts_speak">朗读</string>
+    <string name="rd_tts_speak_string">朗读选定的内容</string>
+    <string name="rd_tts_speak_start">从当前位置开始朗读</string>
+    <string name="atb_rd_speak_continue_reading_button">继续朗读按钮</string>
+    <string name="atb_rd_speak_previous_page_button">朗读上一页按钮</string>
+    <string name="atb_rd_speak_next_page_button">朗读下一页按钮</string>
+    <string name="atb_rd_speak_stop_button">停止朗读按钮</string>
+    <string name="atb_rd_speak_repeat_button">重复朗读按钮</string>
+    <string name="atb_rd_speak_pause_button">暂停朗读按钮</string>
+    <string name="tts_speechrate_title">播放速度</string>
+
+    <!--multi select-->
+    <string name="fx_string_group">组合</string>
+    <string name="fx_string_ungroup">取消组合</string>
+</resources>

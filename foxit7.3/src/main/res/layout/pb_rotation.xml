@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pb_tv_rotationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/fx_string_rotation"
+        android:textColor="@color/ux_text_color_body2_gray"
+        android:textSize="@dimen/ux_text_height_menu"/>
+
+    <LinearLayout
+        android:id="@+id/pb_ll_rotation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pb_btn_rotation_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pb_rotation_selector"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/pb_rotation_0"
+            android:textColor="@color/pb_annot_text_selector"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pb_btn_rotation_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pb_rotation_selector"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/pb_rotation_90"
+            android:textColor="@color/pb_annot_text_selector"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pb_btn_rotation_180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pb_rotation_selector"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/pb_rotation_180"
+            android:textColor="@color/pb_annot_text_selector"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pb_btn_rotation_270"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pb_rotation_selector"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/pb_rotation_270"
+            android:textColor="@color/pb_annot_text_selector"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pb_separator_iv"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@color/ux_color_seperator_gray"/>
+</LinearLayout>

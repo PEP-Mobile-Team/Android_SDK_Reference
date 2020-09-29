@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="fx_more_menu_title">更多</string>
+
+    <!-- moremenu File  Resource -->
+    <string name="rd_menu_file">文档</string>
+    <string name="rv_doc_info">属性</string>
+    <string name="rv_doc_reduce_file_size">文档瘦身</string>
+    <string name="rv_doc_snapshot">截屏</string>
+
+    <string name="fx_string_saveas_filename">文件名</string>
+    <string name="fx_string_format">格式</string>
+    <string name="rv_saveas_original">源文档</string>
+    <string name="rv_saveas_flatten">扁平化副本</string>
+    <string name="rv_saveas_optimize">压缩副本文件大小</string>
+    <string name="rv_saveas_optimize_toast">优化文件从%1$s压缩到%2$s</string>
+    <string name="rv_saveas_optimize_optimizing">正在优化文档…</string>
+    <string name="rv_saveas_image_settings">彩色/灰度图像</string>
+    <string name="rv_saveas_mono_settings">黑白图像</string>
+    <string name="rv_saveas_mono_settings_lossless">无损</string>
+    <string name="rv_saveas_mono_settings_lossy">有损</string>
+    <string name="fx_string_saveas_quality">质量</string>
+
+    <!-- moremenu Protect  Resource -->
+    <string name="menu_more_group_protect">保护</string>
+    <string name="rv_doc_encrpty_standard">密码保护</string>
+    <string name="menu_more_item_trust_certificate">信任证书</string>
+    <string name="menu_more_item_remove_encrytion">移除安全设置</string>
+    <string name="rv_doc_encrypt_standard_switch_title">管理安全</string>
+    <string name="rv_doc_encrypt_standard_switch_content">您确定您想要更改该文档的安全设置？</string>
+
+    <!-- moremenu form  Resource -->
+    <string name="menu_more_group_form">表单</string>
+    <string name="menu_more_item_create">创建表单域</string>
+    <string name="menu_more_item_reset">重置表单域</string>
+    <string name="menu_more_item_import">导入表单数据</string>
+    <string name="menu_more_item_export">导出表单数据</string>
+    <string name="fx_form_importing">正在导入&#8230;</string>
+    <string name="fx_form_reseting">正在重置&#8230;</string>
+    <string name="fx_form_exporting">正在导出&#8230;</string>
+    <string name="formfiller_import_title">导入</string>
+    <string name="formfiller_export_title">导出</string>
+    <string name="fm_file_exist">文件已经存在</string>
+    <string name="formfiller_export_error">>导出数据失败。</string>
+
+    <!-- moremenu print Resource -->
+    <string name="menu_more_print">打印</string>
+    <string name="menu_more_print_item">文件</string>
+    <string name="rv_print_setting_title">设置</string>
+    <string name="rv_print_options">打印内容</string>
+    <string name="rv_print_annot">注释</string>
+    <string name="file_not_exist">文件不存在</string>
+    <string name="file_is_not_pdf">您选择的文件不是PDF文件</string>
+    <string name="fx_os_version_too_low_toast">当前操作系统版本太低，无法使用打印功能</string>
+
+    <!-- moremenu annotation  Resource -->
+    <string name="menu_more_item_annot_import">导入注释</string>
+    <string name="menu_more_item_annot_export">导出注释</string>
+    <string name="menu_more_success_export_data">导出数据成功。</string>
+    <string name="menu_more_success_import_data">成功将数据导入到当前文档。</string>
+    <string name="menu_more_fail_import_data">将数据导入到当前文档失败。</string>
+</resources>

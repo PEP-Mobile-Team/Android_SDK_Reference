@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ux_color_toolbar_grey"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:paddingTop="@dimen/ux_horz_right_margin_phone"
+                android:paddingBottom="@dimen/ux_horz_right_margin_phone"
+                android:text="@string/rv_saveas_image_settings"
+                android:textColor="@color/ux_text_color_subhead_colour"
+                android:textSize="@dimen/ux_text_size_12sp" />
+
+            <com.foxit.uiextensions.controls.dialog.saveas.NestedListView
+                android:id="@+id/rd_image_settings_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ux_color_toolbar_grey"
+                android:cacheColorHint="@color/ux_color_translucent"
+                android:divider="@null" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:paddingTop="@dimen/ux_horz_right_margin_phone"
+                android:paddingBottom="@dimen/ux_horz_right_margin_phone"
+                android:text="@string/rv_saveas_mono_settings"
+                android:textColor="@color/ux_text_color_subhead_colour"
+                android:textSize="@dimen/ux_text_size_12sp" />
+
+            <com.foxit.uiextensions.controls.dialog.saveas.NestedListView
+                android:id="@+id/rd_mono_settings_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ux_color_toolbar_grey"
+                android:cacheColorHint="@color/ux_color_translucent"
+                android:divider="@null" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

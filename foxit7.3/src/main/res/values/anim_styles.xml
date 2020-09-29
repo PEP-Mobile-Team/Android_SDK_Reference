@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PB_PopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/pb_anim_b2t_show</item>
+        <item name="android:windowExitAnimation">@anim/pb_anim_b2t_hidden</item>
+    </style>
+
+    <style name="View_Animation_BtoT">
+        <item name="android:windowEnterAnimation">@anim/view_anim_btot_show</item>
+        <item name="android:windowExitAnimation">@anim/view_anim_btot_hide</item>
+    </style>
+
+    <style name="View_Animation_TtoB">
+        <item name="android:windowEnterAnimation">@anim/view_anim_ttob_show</item>
+        <item name="android:windowExitAnimation">@anim/view_anim_ttob_hide</item>
+    </style>
+    <style name="View_Animation_LtoR">
+        <item name="android:windowEnterAnimation">@anim/view_anim_ltor_show</item>
+        <item name="android:windowExitAnimation">@anim/view_anim_ltor_hide</item>
+    </style>
+
+    <style name="View_Animation_RtoL">
+        <item name="android:windowEnterAnimation">@anim/view_anim_rtol_show</item>
+        <item name="android:windowExitAnimation">@anim/view_anim_rtol_hide</item>
+    </style>
+</resources>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/ux_text_color_title_light">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_thumbnail_create_page_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+                android:layout_marginTop="@dimen/ux_horz_left_margin_phone"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/rd_create_page_type_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"/>
+
+                <LinearLayout
+                    android:id="@+id/rd_ll_page_type_dots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ux_horz_left_margin_phone"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/createpdf_new_dot1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pb_ll_colors_dot_selected"/>
+
+                    <ImageView
+                        android:id="@+id/createpdf_new_dot2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/pb_ll_colors_dot"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rv_doc_info_root_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_thumbnail_create_page_type"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rv_thumbnail_blank_page_counts"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                    android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                    android:paddingRight="@dimen/ux_horz_right_margin_phone">
+
+                    <TextView
+                        android:id="@+id/tv_thumbnail_page_counts_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/tv_thumbnail_page_counts"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/createpdf_new_pagenum"
+                        android:textColor="@color/ux_text_color_body2_dark"
+                        android:textSize="@dimen/ux_text_height_menu"/>
+
+                    <TextView
+                        android:id="@+id/tv_thumbnail_page_counts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical|right"
+                        android:text="1"
+                        android:textColor="@color/ux_text_color_body2_dark"
+                        android:textSize="@dimen/ux_text_height_menu"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:contentDescription="@string/createpdf_new_pagenum"
+                    android:src="@color/ux_color_seperator_gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/rv_thumbnail_blank_page_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                    android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                    android:paddingRight="@dimen/ux_horz_right_margin_phone">
+
+                    <TextView
+                        android:id="@+id/tv_thumbnail_page_size_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/tv_thumbnail_page_size"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/createpdf_new_pagesize"
+                        android:textColor="@color/ux_text_color_body2_dark"
+                        android:textSize="@dimen/ux_text_height_menu"/>
+
+                    <TextView
+                        android:id="@+id/tv_thumbnail_page_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawableRight="@drawable/fx_item_detail"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/createpdf_new_pagesize_legal"
+                        android:textColor="@color/ux_text_color_body2_dark"
+                        android:textSize="@dimen/ux_text_height_menu"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:contentDescription="@string/createpdf_new_pagesize"
+                    android:src="@color/ux_color_seperator_gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/rv_thumbnail_blank_page_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                    android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                    android:paddingRight="@dimen/ux_horz_right_margin_phone">
+
+                    <ImageView
+                        android:id="@+id/iv_thumbnail_page_color_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/createpdf_new_pagecolor"
+                        android:gravity="center"
+                        android:src="@drawable/fx_item_detail"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rela_create_page_color"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/iv_thumbnail_page_color_detail">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rd_createpdf_page_color_bg">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_create_page_color"
+                            android:layout_width="26dip"
+                            android:layout_height="26dip"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:background="@color/ux_color_translucent">
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_thumbnail_page_color_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@id/rela_create_page_color"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/createpdf_new_pagecolor"
+                        android:textColor="@color/ux_text_color_body2_dark"
+                        android:textSize="@dimen/ux_text_height_menu"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:contentDescription="@string/rv_doc_info"
+                    android:src="@color/ux_color_seperator_gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/rv_thumbnail_blank_page_direction"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                    android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                    android:paddingRight="@dimen/ux_horz_right_margin_phone">
+
+                    <TextView
+                        android:id="@+id/tv_thumbnail_page_direction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawableRight="@drawable/fx_item_detail"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/createpdf_new_ori_partrait"
+                        android:textColor="@color/ux_text_color_body2_dark"
+                        android:textSize="@dimen/ux_text_height_menu"/>
+
+                    <TextView
+                        android:id="@+id/tv_thumbnail_page_direction_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@id/tv_thumbnail_page_direction"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/createpdf_new_pageorientation"
+                        android:textColor="@color/ux_text_color_body2_dark"
+                        android:textSize="@dimen/ux_text_height_menu"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:contentDescription="@string/createpdf_new_pageorientation"
+                    android:src="@color/ux_color_seperator_gray"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

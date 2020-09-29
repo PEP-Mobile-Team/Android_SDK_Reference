@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_security_certlist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ux_color_white"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rv_panel_bkot_item_bg"
+        android:layout_marginTop="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginBottom="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone">
+
+        <TextView
+            android:id="@+id/rv_security_certlist_listtitle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ux_text_color_subhead_colour"
+            android:textSize="@dimen/ux_text_height_menu"
+            android:text="@string/rv_certlist_note"
+
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        >
+        <ListView
+            android:id="@+id/rv_security_certlist_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/ux_color_seperator_gray"
+            android:focusable="true"
+            >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

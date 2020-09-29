@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- BaseBar -->
+    <string name="fx_find_item_error">The item can\'t be found</string>
+    <string name="fx_add_beyond_the_limit_error">Failed to add item, the TopBar/BottomBar maximum items limit is %1$d</string>
+    <string name="the_attached_activity_is_not_fragmentActivity">The attached activity is not a FragmentActivity</string>
+
+    <!-- localModule -->
+    <string name="the_fileitem_listener_is_null">The OnFileItemEventListener is null</string>
+
+    <!-- Thumbnail -->
+    <string name="docinfo_module_not_regisetered_toast">DocInfo module needs to be registered in Ui extensions manager!!!</string>
+</resources>

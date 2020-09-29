@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fx_string_copy">Copy</string>
+    <string name="fx_string_reply">Reply</string>
+	<string name="fx_string_comment">Comment</string>
+    <string name="fx_string_flatten">Flatten</string>
+	<string name="fx_string_color">Color</string>
+    <string name="fx_string_opacity">Opacity</string>
+    <string name="fx_string_rotation">Rotation</string>
+    <string name="fx_string_linewidth">Linewidth</string>
+	<string name="fx_string_edit">Edit</string>
+    <string name="fx_string_open">Open</string>
+    <string name="fx_string_rename">Rename</string>
+    <string name="fx_string_unit">Unit</string>
+    <string name="fx_string_redaction">Redaction</string>
+    <string name="fx_string_apply">Apply</string>
+    <string name="fx_string_warning">Alert</string>
+
+	<!--annotation text  -->
+    <string name="annot_text_comment">Comment</string>
+    <string name="annot_text_key">Key</string>
+    <string name="annot_text_note">Note</string>
+    <string name="annot_text_help">Help</string>
+    <string name="annot_text_newparagraph">NewParagraph</string>
+    <string name="annot_text_paragraph">Paragraph</string>
+    <string name="annot_text_insert">Insert</string>
+
+    <!--FileAttachment-->
+    <string name="annot_fat_icontext_graph">Graph</string>
+    <string name="annot_fat_icontext_paperclip">Paperclip</string>
+    <string name="annot_fat_icontext_pushpin">PushPin</string>
+    <string name="annot_fat_icontext_tag">Tag</string>
+    <string name="annot_fat_filesizelimit_meg">
+        This comment is too large to be attached. The maximum size is %1$dMB.
+    </string>
+
+    <!--Annot menu-->
+    <string name="rd_am_item_copy_text">Copy Text</string>
+    <string name="fx_string_highlight">Highlight</string>
+    <string name="fx_string_underline">Underline</string>
+    <string name="fx_string_strikeout">Strikeout</string>
+    <string name="fx_string_squiggly">Squiggly</string>
+    <string name="fx_string_signature">Sign</string>
+    <string name="fx_am_style">Appearance</string>
+    <string name="fx_distance">Distance</string>
+    <string name="fx_string_note">Note</string>
+    <string name="fx_string_oval">Oval</string>
+    <string name="fx_string_rectangle">Rectangle</string>
+    <string name="fx_string_insert_text">Insert Text</string>
+    <string name="fx_string_replace_text">Replace</string>
+    <string name="fx_string_eraser">Eraser</string>
+    <string name="fx_string_pencil">Pencil</string>
+    <string name="fx_string_arrow">Arrow</string>
+    <string name="fx_string_line">Line</string>
+    <string name="fx_string_fileattachment">Attachment</string>
+
+    <string name="hm_clear">Clear</string>
+    <string name="cloud_delete_tv">Delete</string>
+    <string name="rd_comment_reply_list">Comments</string>
+    <string name="rv_panel_annot_delete_tips">Are you sure you want to delete the comment(s) and related replies?</string>
+    <string name="rd_panel_clear_comment">Are you sure you want to clear all comments?</string>
+
+    <string name="fx_distance_unit">Scale Ratio:</string>
+    <string name="fx_string_border_style">Border Style</string>
+
+    <!-- InsertText and ReplaceText-->
+    <string name="fx_string_inserttext">Insert</string>
+    <string name="fx_string_replacetext">Replace</string>
+    <string name="rd_pb_scale">Scale relative to target page</string>
+
+    <string name="annot_continue_create">Keep tool selected</string>
+    <string name="annot_single_create">Single Comment</string>
+    <string name="mt_text_markup">Text Markup</string>
+    <string name="mt_drawing">Drawing</string>
+    <string name="mt_others">Others</string>
+    <string name="annot_link_alert_title">Information</string>
+    <string name="annot_link_alert_prompt">File not found.Check if the file was moved ,renamed,or deleted.</string>
+
+    <!-- Freetext -->
+    <string name="annot_tool_display_name_typewrite">Typewriter</string>
+    <string name="annot_tool_display_name_callout">Callout</string>
+    <string name="annot_tool_display_name_textbox">TextBox</string>
+    <string name="fx_string_font">Font</string>
+    <string name="fx_string_fontsize">FontSize</string>
+    <!-- Font name -->
+    <string name="fx_font_courier">Courier</string>
+    <string name="fx_font_helvetica">Helvetica</string>
+    <string name="fx_font_times">Times</string>
+
+    <!--stamp-->
+    <string name="annot_tool_display_name_stamp">Stamp</string>
+    <string name="annot_stamp_standard">Standard Stamps</string>
+    <string name="annot_stamp_signhere">Sign Here</string>
+    <string name="annot_stamp_dynamic">Dynamic Stamps</string>
+
+    <!--Screen annot-->
+    <string name="screen_annot_image">Image</string>
+    <string name="screen_annot_audio">Audio</string>
+    <string name="screen_annot_video">Video</string>
+    <string name="pb_rotation_0">0&#176;</string>
+    <string name="pb_rotation_90">90&#176;</string>
+    <string name="pb_rotation_180">180&#176;</string>
+    <string name="pb_rotation_270">270&#176;</string>
+
+    <string name="recording_audio">Recording Audio</string>
+    <string name="audio_start">Start</string>
+
+    <string name="recording_video">Recording Video</string>
+    <string name="remake_video">Remake</string>
+
+    <string name="multimedia_play">Play</string>
+    <string name="fx_permission_denied">Permission Denied</string>
+
+    <string name="multimedia_type_not_support">The format for the media file you have selected is not supported.</string>
+    <string name="the_sdcard_not_exist">Please confirm that the SD card has been inserted</string>
+    <string name="record_failed">Recording failed.</string>
+
+    <!--Polygon-->
+    <string name="fx_string_polygon">Polygon</string>
+    <string name="fx_string_polygon_cloud">Polygon Cloud</string>
+    <string name="fx_string_polyLine">Polyline</string>
+    <string name="add_polygon_failed_hints">A polygon annotation should require at least 3 points as vertexes</string>
+    <string name="add_cloud_failed_hints">A polygon cloud annotation should require at least 3 points as vertexes</string>
+    <string name="add_polyline_failed_hints">A polyline annotation should require at least 2 points as vertexes</string>
+
+    <!--Annot action callback-->
+    <string name="unsupported_to_submit_form_tip">Unsupported to submit form now.</string>
+    <string name="unsupported_to_launch_url_tip">Unsupported to launch url now.</string>
+    <string name="action_alert_msg">Alert&#8230;%1$s</string>
+
+    <!-- Select multiple annotations-->
+    <string name="fx_string_multi_select">Multi Picking</string>
+
+    <!-- Redact -->
+    <string name="fx_string_overlay_title">Text</string>
+    <string name="fx_string_overlay_hint">Please enter text</string>
+    <string name="fx_string_apply_all">Apply all redaction</string>
+    <string name="fx_string_redact_apply_toast">You are about to permanently redact the marked content, this operation can\'t be undone. Are you sure you want to continue?</string>
+</resources>

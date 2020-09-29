@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" >
+    <TextView
+        android:id="@+id/pb_tv_colorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/fx_string_color"
+        android:textColor="@color/ux_text_color_body2_gray"
+        android:textSize="@dimen/ux_text_height_menu"/>
+
+    <LinearLayout
+        android:id="@+id/pb_ll_colors_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pb_ll_colors_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <LinearLayout
+            android:id="@+id/pb_ll_colors_dots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pb_ll_colors_dot_selected"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/pb_ll_colors_dot"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pb_separator_iv"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@color/ux_color_seperator_gray"/>
+</LinearLayout>

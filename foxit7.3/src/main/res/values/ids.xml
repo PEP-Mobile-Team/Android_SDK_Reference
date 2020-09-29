@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sd_outline_chapter" type="id"></item>
+    <item name="sd_outline_more" type="id"></item>
+
+    <item name="rd_main_id" type="id" />
+    <item name="fb_local_view_top" type="id" />
+    <item name="fb_local_view_bottom" type="id" />
+    <item name="fb_local_item_sign" type="id" />
+    <item name="fb_local_item_signout" type="id" />
+    <item name="fb_local_item_edit" type="id" />
+    <item name="fb_local_item_edit_finish" type="id" />
+    <item name="fb_local_item_edit_counter" type="id" />
+    <item name="fb_local_item_edit_compare" type="id" />
+
+    <!-- annotation-->
+    <item name="rd_jumppage_previous" type="id"></item>
+    <item name="rd_jumppage_next" type="id"></item>
+
+    <!-- signature-->
+    <item name="sig_create_back" type="id" />
+    <item name="sig_create_property" type="id" />
+    <item name="sig_create_delete" type="id" />
+    <item name="sig_create_save" type="id" />
+
+    <!-- AppKeyboardUtil -->
+    <item name="keyboard_util" type="id" />
+
+    <item name="rd_panel_tab_item" type="id" />
+
+    <item name="rd_show_animation_tag" type="id" />
+    <item name="rd_hide_animation_tag" type="id" />
+
+    <!-- compare -->
+    <item name="compare_back" type="id" />
+    <item name="compare_show_legend" type="id" />
+    <item name="compare_hide_legend" type="id" />
+
+    <!-- treeview -->
+    <item name="node_header" type="id" />
+    <item name="node_items" type="id" />
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:paddingBottom="5dp"
+        android:text="@string/fx_distance_unit"
+        android:textColor="@color/ux_text_color_body2_gray"
+        android:textSize="@dimen/ux_text_height_menu"
+        android:id="@+id/pb_tv_distance"/>
+
+    <LinearLayout
+        android:id="@+id/pb_ll_distance"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:textColor="@color/ux_text_color_body2_gray"
+            android:textSize="12sp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:background="@drawable/pb_fontstyle_tv_border"
+            android:id="@+id/pb_tv_distance_unit_1_value"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:textColor="@color/ux_text_color_body2_gray"
+            android:textSize="12sp"
+            android:background="@drawable/pb_fontstyle_tv_border"
+            android:id="@+id/pb_tv_distance_unit_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text=" = "
+            android:textColor="@color/ux_text_color_body2_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:textColor="@color/ux_text_color_body2_gray"
+            android:textSize="12sp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:background="@drawable/pb_fontstyle_tv_border"
+            android:id="@+id/pb_tv_distance_unit_2_value"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:textColor="@color/ux_text_color_body2_gray"
+            android:textSize="12sp"
+            android:background="@drawable/pb_fontstyle_tv_border"
+            android:id="@+id/pb_tv_distance_unit_2"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ux_color_seperator_gray"/>
+</LinearLayout>

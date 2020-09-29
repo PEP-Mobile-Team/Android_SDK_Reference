@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rd_note_dialog_edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ux_toolbar_height_phone"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/fx_string_note"
+            android:textColor="@color/ux_text_color_title_dark"
+            android:textSize="18sp"
+            android:typeface="normal"/>
+
+        <EditText
+            android:id="@+id/rd_note_dialog_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ux_color_yellow"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/rd_note_dialog_edit_title"
+            android:gravity="left|top"
+            android:padding="16dp"
+            android:minLines="5"
+            android:textSize="15sp"
+            android:textColor="@color/ux_color_dark"
+            android:inputType="textMultiLine"
+            android:typeface="normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rd_note_dialog_edit_title"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ux_toolbar_solidLine_height"
+                android:src="@color/ux_color_shadow_solid_line">
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ux_shadow_height"
+                android:src="@drawable/rd_search_shadow_bg90">
+            </ImageView>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@color/ux_color_dialog_cutting_line">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/rd_note_dialog_edit_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ux_dialog_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_left_button_background_selector"
+            android:text="@string/fx_string_cancel"
+            android:textSize="@dimen/ux_text_height_button"
+            android:textColor="@color/dlg_bt_text_selector"/>
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="@dimen/ux_dialog_button_height"
+            android:src="@color/ux_color_dialog_cutting_line">
+        </ImageView>
+        <Button
+            android:id="@+id/rd_note_dialog_edit_ok"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ux_dialog_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_right_button_background_selector"
+            android:text="@string/fx_string_ok"
+            android:textSize="@dimen/ux_text_height_button"
+            android:textColor="@color/dlg_bt_text_selector"/>
+    </LinearLayout>
+
+
+</LinearLayout>

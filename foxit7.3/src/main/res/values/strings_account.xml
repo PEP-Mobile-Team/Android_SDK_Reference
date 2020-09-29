@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connected_pdf_login_title_text">Foxit ID</string>
+
+
+    <item type="id" name="login_webview_end_point_tag_key"/>
+</resources>

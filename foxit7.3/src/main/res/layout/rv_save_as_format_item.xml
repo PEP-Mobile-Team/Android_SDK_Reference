@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rd_menu_item_selector"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_format_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+            android:src="@drawable/pb_selected" />
+
+        <TextView
+            android:id="@+id/tv_format_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/fx_string_saveas_filename"
+            android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+            android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+            android:textColor="@color/ux_text_color_body2_dark"
+            android:textSize="@dimen/ux_text_size_14sp" />
+
+        <TextView
+            android:id="@+id/tv_format_second_title"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/ux_list_item_height_1l_phone"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:textColor="@color/ux_text_color_body2_gray"
+            android:textSize="@dimen/ux_text_size_12sp"
+            android:visibility="invisible" />
+
+        <com.foxit.uiextensions.annots.common.UIBtnImageView
+            android:id="@+id/iv_format_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:src="@drawable/rd_right"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@string/fx_string_saveas"
+        android:src="@color/ux_color_seperator_gray" />
+
+</LinearLayout>

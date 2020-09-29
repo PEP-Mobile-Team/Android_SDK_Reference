@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/black_shape_background">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/legend_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/compare_vertical_margin"
+        android:layout_marginLeft="@dimen/ux_text_height_title"
+        android:maxLines="1"
+        android:text="@string/legend"
+        android:textSize="15dp"
+        android:textColor="@color/ux_color_white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/compare_vertical_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ux_text_height_title"
+            android:background="@drawable/compare_replace"
+            android:layout_gravity="left|center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/legend_replaced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/compare_legend_interval"
+            android:maxLines="1"
+            android:text="@string/replaced"
+            android:textSize="15dp"
+            android:textColor="@color/ux_color_white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/compare_vertical_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ux_text_height_title"
+            android:background="@drawable/compare_insert"
+            android:layout_gravity="left|center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/legend_inserted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/compare_legend_interval"
+            android:maxLines="1"
+            android:text="@string/inserted"
+            android:textSize="15dp"
+            android:textColor="@color/ux_color_white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/compare_vertical_margin"
+        android:layout_marginBottom="@dimen/compare_vertical_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ux_text_height_title"
+            android:background="@drawable/compare_delete"
+            android:layout_gravity="left|center_vertical"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/legend_deleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/compare_legend_interval"
+            android:maxLines="1"
+            android:text="@string/deleted"
+            android:textSize="15dp"
+            android:textColor="@color/ux_color_white"/>
+
+    </LinearLayout>
+</LinearLayout>

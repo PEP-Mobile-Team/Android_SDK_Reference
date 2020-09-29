@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rv_security_information_certlist_title">Certificate Information</string>
+    <string name="rv_security_information_certlist_serialnumber">Serial number</string>
+    <string name="rv_security_information_certlist_publisher">Issued by</string>
+    <string name="rv_security_information_certlist_startdate">Valid from</string>
+    <string name="rv_security_information_certlist_expiringdate">Valid to</string>
+    <string name="rv_security_information_certlist_email">Email Address</string>
+
+    <!-- 	Documents Standard Encrypt -->
+    <string name="rv_doc_encrpty_standard_remove">Remove Security</string>
+    <string name="rv_doc_encrpty_standard_ownerpassword_title">Password</string>
+    <string name="rv_doc_encrpty_standard_ownerpassword_failed">Invalid password. Please try again.</string>
+    <string name="rv_doc_encrypt_standard_ownerpassword_content">Current document is protected, Please enter a Permission Password.</string>
+    <string name="rv_doc_encrpty_standard_removepassword_confirm">Are you sure you want to remove security from this document?</string>
+    <string name="rv_doc_encrpty_standard_top_title">Security Options</string>
+    <string name="rv_doc_encrpty_standard_openfile">Open Document</string>
+    <string name="rv_doc_encrpty_standard_password">Password:</string>
+    <string name="rv_doc_encrpty_standard_must_input">Required</string>
+    <string name="rv_doc_encrpty_standard_owner_permission">Add Document Restrictions</string>
+    <string name="rv_doc_encrpty_standard_bottom_tip1">-When \"Open Document\" is turned on, a password is required to open the document.</string>
+    <string name="rv_doc_encrpty_standard_bottom_tip2">-When  \"Document Restrictions\" is enabled, a password is needed to remove the protection, and you can choose to disallow certain features for this document.</string>
+    <string name="rv_doc_encrpty_standard_same_password">The Document Open and Owner passwords cannot be the same, please enter a different password in either the Document Open Password field or the Owner Password field.</string><!-- Security PublicKey -->
+
+
+    <string name="rv_encrypt_dialog_title">Encryption</string>
+    <string name="rv_encrypt_dialog_description">After applying encryption, the encryption and all other changes to the file will be saved.</string>
+
+    <string name="rv_decrypt_dialog_title">Decryption</string>
+    <string name="rv_decrypt_dialog_description">After applying decryption, the decryption and all other changes to the file will be saved.</string>
+
+    <!--trust certificate -->
+    <string name="rv_trust_certificate">Trust</string>
+    <string name="rv_view_certificate_info">View Certificate</string>
+    <string name="rv_security_information_certlist_usage">Usage</string>
+    <string name="rv_remove_trust_certificate_prompt">Are you sure you want to delete this certificate?\n You will no longer be able to verify the identity of the owner if you do</string>
+    <string name="rv_add_trust_certificate_prompt">If you change the trusted settings, you will need to revalidate any signatures to see the changes. Trusting certificates directly from a document is not recommended. Are you sure you want to continue?</string>
+</resources>

@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/rd_crop_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_toolbar_height_phone"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+        android:paddingRight="@dimen/ux_horz_left_margin_phone"
+        android:background="@drawable/search_bottom_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/top_bt_nocrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:background="@color/ux_color_translucent"
+            android:minWidth="50dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="@string/fx_string_nocrop"
+            android:textColor="@color/rd_crop_color_selector"
+            android:textSize="@dimen/ux_text_height_button"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/top_title_crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:ellipsize="middle"
+                android:textColor="@color/ux_text_color_title_dark"
+                android:textSize="@dimen/ux_text_height_title"
+                android:text="@string/fx_string_crop_title">
+
+            </TextView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/top_bt_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:background="@color/ux_color_translucent"
+            android:minWidth="50dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="@string/fx_string_crop"
+            android:textColor="@color/rd_crop_color_selector"
+            android:textSize="@dimen/ux_text_height_button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rd_crop_ll_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rd_crop_ll_top"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_above="@+id/rd_crop_ll_bottom" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rd_crop_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_toolbar_height_phone"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/search_bottom_bg"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/bottom_bt_smartcrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:background="@color/ux_color_translucent"
+            android:minWidth="50dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="@string/fx_string_smartcrop"
+            android:textColor="@color/rd_crop_color_selector"
+            android:textSize="@dimen/ux_text_height_button"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/bottom_ll_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bottom_bt_detect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:background="@color/ux_color_translucent"
+            android:minWidth="50dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="@string/fx_string_detect"
+            android:textColor="@color/rd_crop_color_selector"
+            android:textSize="@dimen/ux_text_height_button"/>
+
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/top_ll_shadow"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/rd_crop_ll_top"-->
+        <!--android:orientation="vertical">-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/ux_shadow_height"-->
+            <!--android:src="@drawable/search_shadow_bg90"/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/bottom_ll_shadow"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@id/rd_crop_ll_bottom"-->
+        <!--android:orientation="vertical">-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/ux_shadow_height"-->
+            <!--android:src="@drawable/search_shadow_bg270" />-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/ux_toolbar_solidLine_height"-->
+            <!--android:src="@color/ux_color_shadow_solid_line">-->
+        <!--</ImageView>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

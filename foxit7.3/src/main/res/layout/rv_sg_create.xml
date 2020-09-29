@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ux_color_white">
+
+    <RelativeLayout
+        android:id="@+id/sig_create_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/ux_toolbar_height_phone">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sig_create_top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+    >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sig_create_mask_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+    >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sig_create_right_bar_layout"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+    />
+
+    <RelativeLayout
+        android:id="@+id/sig_create_bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+    >
+    </RelativeLayout>
+</RelativeLayout>

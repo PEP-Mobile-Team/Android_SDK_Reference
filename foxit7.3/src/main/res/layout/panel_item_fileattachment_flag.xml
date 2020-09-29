@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/ux_text_height_annotation_item_page"
+             android:background="@color/ux_color_annotation_page_item">
+
+    <TextView
+        android:id="@+id/panel_item_fileattachment_page_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:maxLines="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textColor="@color/ux_text_color_all_pdf_path"
+        android:textSize="@dimen/ux_text_height_body1"/>
+
+</FrameLayout>

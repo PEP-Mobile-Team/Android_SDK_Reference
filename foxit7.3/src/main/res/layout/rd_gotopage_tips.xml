@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+    
+        <TextView
+            android:id="@+id/rd_gotopage_toast_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="20dip"
+            android:textColor="@color/ux_color_white"
+            android:background="@drawable/rd_gotopage_background"
+            android:ellipsize="none"
+            />
+   
+    
+</RelativeLayout>

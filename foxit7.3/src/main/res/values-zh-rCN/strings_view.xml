@@ -1,0 +1,22 @@
+<resources>
+    <string name="rv_page_present_single">单页</string>
+    <string name="rv_page_present_continuous">连续滚动</string>
+    <string name="rv_page_present_thumbnail">缩略图</string>
+    <string name="rd_fitpage_topbar_title">适合页面</string>
+    <string name="rd_fitwidth_topbar_title">适合宽度</string>
+    <string name="rd_rotateview_topbar_title">旋转视图</string>
+    <string name="rd_reflow_topbar_title">重排</string>
+    <string name="rd_crop_topbar_title">裁剪模式</string>
+    <string name="rd_facingmode_topbar_title">双页</string>
+    <string name="rd_coverpage_topbar_title">封面</string>
+    <string name="rd_panzoom_topbar_title">平移缩放</string>
+    <string name="ml_system_light">自动亮度</string>
+    <string name="ml_day_night">夜间模式</string>
+    <string name="ml_page_zoommode">页面显示</string>
+    <string name="ml_pagemode">页面模式</string>
+    <!-- screen_rotation -->
+    <string name="rv_screen_rotation_pad">锁屏</string>
+    <string name="rv_screen_rotation_pad_landscape">横向</string>
+    <string name="rv_screen_rotation_pad_portrait">纵向</string>
+    <string name="rv_screen_rotation_pad_auto">屏幕自动旋转</string>
+</resources>

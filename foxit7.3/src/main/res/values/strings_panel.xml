@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--root panel-->
+    <string name="rv_no_panel_top">No List</string>
+    <string name="rv_no_panel_infomation">No List Information</string>
+
+    <!-- outline -->
+    <string name="rv_panel_phone_top_outline">Outline</string>
+    <string name="rv_panel_outline_noinfo">No Outline Information</string>
+
+    <!--reading mark panel-->
+    <string name="rv_panel_readingbookmark_title">Reading Bookmarks</string>
+    <string name="rv_panel_readingbookmark_tips_noinfo">No Reading Bookmarks Information</string>
+    <string name="rv_panel_readingbookmark_tips_limited">The reading bookmark length is over the restricted limit.</string>
+    <string name="rd_panel_clear_readingbookmarks">Are you sure you want to clear all reading bookmarks?</string>
+
+    <!-- Arrachments panel -->
+    <string name="rv_panel_title_attachment">Attachments</string>
+    <string name="rv_panel_attachment_noinfo">No Attachments</string>
+    <string name="save_failed_by_incorrect_file_name">There was an error saving this document, Bad file name.</string>
+    <string name="rv_panel_attachment_label">Attachment Tab</string>
+    <string name="attachment_page_tab">Page %1$d</string>
+    <string name="rv_panel_edit_desc">Description</string>
+
+    <!--Annotations panel -->
+    <string name="rv_panel_annot_title">Annotations</string>
+    <string name="rv_panel_annot_noinformation">No Annotation List</string>
+    <string name="rv_panel_annot_item_pagenum">Page </string>
+
+    <!--Signatures Panel -->
+    <string name="rv_panel_signature_title">Digital Signatures</string>
+    <string name="rv_panel_signature_noinformation">No digital signatures</string>
+    <string name="rv_panel_signature_signed_by">Signed by %s</string>
+    <string name="rv_panel_signature_revocation">Rev.%s:</string>
+    <string name="rv_panel_signature_view">View</string>
+    <string name="rv_panel_signature_verify">Verify</string>
+    <string name="rv_panel_signature_view_current_version">You are already viewing this version of document covered by the selected signature</string>
+    <string name="rv_panel_signature_unsigned">Unsigned signature field</string>
+</resources>

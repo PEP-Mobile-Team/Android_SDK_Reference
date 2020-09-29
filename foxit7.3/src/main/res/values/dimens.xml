@@ -1,0 +1,72 @@
+<resources>
+    <!-- TEXT SIZE -->
+    <dimen name="ux_text_height_title">20sp</dimen>
+    <dimen name="ux_text_height_subhead">16dp</dimen>
+    <dimen name="ux_text_height_body2">15dp</dimen>
+    <dimen name="ux_text_height_body1">10dp</dimen>
+    <dimen name="ux_text_height_menu">14dp</dimen>
+    <dimen name="ux_text_height_button">14dp</dimen>
+    <dimen name="ux_text_height_toolbar">12dp</dimen>
+    <dimen name="ux_text_height_annotation_content">12dp</dimen>
+    <dimen name="ux_text_height_annotation_item_page">25dp</dimen>
+
+    <dimen name="ux_text_size_20sp">20sp</dimen>
+    <dimen name="ux_text_size_18sp">18sp</dimen>
+    <dimen name="ux_text_size_16sp">16sp</dimen>
+    <dimen name="ux_text_size_15sp">15sp</dimen>
+    <dimen name="ux_text_size_14sp">14sp</dimen>
+    <dimen name="ux_text_size_12sp">12sp</dimen>
+    <dimen name="ux_text_size_11sp">11sp</dimen>
+    <dimen name="ux_text_size_10sp">10sp</dimen>
+    <dimen name="ux_text_size_8sp">8sp</dimen>
+    <dimen name="ux_text_size_4sp">4sp</dimen>
+
+    <!-- ITEM DISTANCE COMMON -->
+    <dimen name="ux_tab_height">48dp</dimen>
+    <dimen name="ux_tab_selection_height">4dp</dimen>
+    <dimen name="ux_shadow_height">2.5dp</dimen>
+    <dimen name="ux_dialog_button_height">48dp</dimen>
+    <dimen name="ux_toolbar_button_interval">20dp</dimen>
+    <dimen name="ux_toolbar_button_icon_text_vert_interval">0dp</dimen>
+    <dimen name="ux_toolbar_solidLine_height">1px</dimen>
+    <dimen name="ux_toolbar_shadowLine_height">3dp</dimen>
+
+    <!-- ITEM DISTANCE PHONE -->
+    <dimen name="ux_horz_left_margin_phone">16dp</dimen>
+    <dimen name="ux_horz_right_margin_phone">9dp</dimen>
+    <dimen name="ux_text_icon_distance_phone">6dp</dimen>
+    <dimen name="ux_toolbar_height_phone">56dp</dimen>
+    <dimen name="ux_toolbar_button_interval_small_phone">4dp</dimen>
+    <dimen name="ux_list_item_height_1l_phone">48dp</dimen>
+    <dimen name="ux_list_item_height_2l_phone">72dp</dimen>
+
+    <dimen name="ux_bottombar_height">48dp</dimen>
+    <dimen name="ux_bottombar_button_space_pad">36dp</dimen>
+    <dimen name="ux_list_item_height_50">50dp</dimen>
+
+    <!-- ITEM DISTANCE PAD -->
+    <dimen name="ux_horz_left_margin_pad">24dp</dimen>
+    <dimen name="ux_horz_right_margin_pad">16dp</dimen>
+    <dimen name="ux_text_icon_distance_pad">17dp</dimen>
+    <dimen name="ux_toolbar_height_pad">64dp</dimen>
+    <dimen name="ux_toolbar_button_interval_small_pad">6dp</dimen>
+    <dimen name="ux_list_item_height_1l_pad">56dp</dimen>
+    <dimen name="ux_list_item_height_2l_pad">72dp</dimen>
+
+    <dimen name="rd_bottombar_button_space">40dp</dimen>
+
+    <dimen name="annot_highlight_paintbox_outset">4dp</dimen>
+
+    <dimen name="annot_textbox_width_phone">72dp</dimen>
+    <dimen name="annot_textbox_width_pad">96dp</dimen>
+
+    <dimen name="compare_legend_interval">56dp</dimen>
+    <dimen name="compare_result_title">15sp</dimen>
+    <dimen name="compare_vertical_margin">16dp</dimen>
+    <dimen name="compare_horizontal_margin">16dp</dimen>
+
+    <dimen name="ux_screen_margin_icon">4dp</dimen>
+    <dimen name="ux_screen_margin_text">14dp</dimen>
+    <dimen name="ux_popup_window_shadow_length">24dp</dimen>
+
+</resources>

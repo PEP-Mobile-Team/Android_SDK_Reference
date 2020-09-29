@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ThicknessImage">
+        <attr name="borderColor" format="color"></attr>
+        <attr name="borderThickness" format="dimension"></attr>
+    </declare-styleable>
+</resources>

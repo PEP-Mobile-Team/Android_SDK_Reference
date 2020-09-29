@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Digital Signature -->
+    <string name="rd_security_dsg_addSig">Add Signature</string>
+    <string name="rv_security_dsg_verify">Verify Signature</string>
+    <string name="rv_security_dsg_verify_title">Verification Results</string>
+    <string name="rv_security_dsg_verify_valid">Digital Signature is valid.</string>
+    <string name="rv_security_dsg_verify_perm">The revision of the document that was covered by this signature has not been altered. However, there have been subsequent changes to the document.</string>
+    <string name="rv_security_dsg_verify_otherState">Digital Signature is invalid as other reasons.</string>
+    <string name="rv_security_dsg_verify_invalid">Digital Signature is invalid.</string>
+    <string name="rv_security_dsg_verify_unknown">Digital Signature is UNKNOWN.</string>
+    <string name="rv_security_dsg_verify_expired">Digital Signature is UNKNOWN.\nCertificate for verifying issuer is expired.</string>
+    <string name="rv_security_dsg_verify_errorByteRange">Digital Signature is invalid as error byte range.</string>
+    <string name="rv_security_dsg_verify_error">Unknown error is happened to digital signature verification</string>
+    <string name="rv_security_dsg_cert_publisher">Certificate Issuer:</string>
+    <string name="rv_security_dsg_cert_serialNumber">Serial Number:</string>
+    <string name="rv_security_dsg_cert_emailAddress">Email Address:</string>
+    <string name="rv_security_dsg_cert_validityStarts">Valid from:</string>
+    <string name="rv_security_dsg_cert_validityEnds">Valid to:</string>
+    <string name="rv_security_dsg_cert_signedTime">Signed Date:</string>
+    <string name="rv_certlist_note_searching">Searching&#8230;</string>
+    <string name="rv_certlist_note">Select Certificate</string>
+    <string name="rv_security_certlist_nocerificatefile">No Certificates</string>
+    <string name="rv_security_certlist_inputpasswd">Please enter a password</string>
+    <string name="rv_security_certlist_invalidpasswd">Invalid password. Enter password again.</string>
+    <string name="rv_security_certlist_outdate">The certificate has expired.</string>
+    <string name="rv_security_certlist_pubkey_invalidtype">This certificate cannot be used for encryption and decryption.</string>
+    <string name="rv_security_certfrompfx_failed">Failed to get certificates</string>
+    <!-- Sign -->
+    <string name="rv_sign_waiting">Processing&#8230;</string>
+    <string name="rv_sign_model">Signature List</string>
+    <string name="rv_sign_create">Tap to create a new signature</string>
+
+    <string name="rv_sign_dialog_title">Sign</string>
+    <string name="rv_sign_dialog_description">After applying a signature, the signature and all other changes to the file will be saved.</string>
+
+    <!-- dsg sign -->
+    <string name="sg_cert_add_text">Select and add certificate</string>
+    <string name="sg_cert_current_name_title">Current certificate:</string>
+    <string name="sg_signer_title">Signature</string>
+    <string name="sg_signer_dsg_group_title">Certificate signature</string>
+    <string name="sg_signer_handwriting_group_title">Normal signature</string>
+    <string name="dsg_sign_succeed">Signature Succeed.</string>
+    <string name="dsg_sign_failed">Signature Failed.</string>
+
+    <string name="no_permission">No permission</string>
+
+    <string name="signature_ltv_attribute">Signature is LTV enabled</string>
+
+    <string name="rv_security_dsg_trust_cert_title">Add to Trusted Certificates</string>
+    <string name="rv_security_dsg_trust_cert_tip">Do you want to trust the certificate when validating signatures or certified documents?</string>
+    <string name="rv_security_dsg_trust_cert_name">Name:</string>
+    <string name="rv_security_dsg_trust_cert_usage">Intended key usage:</string>
+    <string name="rv_security_dsg_verify_error_data">Format error: not a PDF or corrupted</string>
+
+    <string name="cert_key_usage">Not Specified</string>
+    <string name="cert_key_usage_data_encipherment">Data Encipherment</string>
+    <string name="cert_key_usage_digital_signature">Digital Signature</string>
+    <string name="cert_key_usage_key_agreement">Key Agreement</string>
+    <string name="cert_key_usage_key_cert_sign">Key Cert Sign</string>
+    <string name="cert_key_usage_key_encipherment">Key Encipherment</string>
+    <string name="cert_key_usage_non_repudiation">Non Repudiation</string>
+    <string name="cert_key_usage_crl_sign">Crl Sign</string>
+
+    <string name="rv_security_failed_to_view">Failed to view this verson</string>
+</resources>

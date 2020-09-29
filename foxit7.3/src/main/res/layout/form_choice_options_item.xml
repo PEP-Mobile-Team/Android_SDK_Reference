@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fx_choice_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/fx_choice_item_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/rd_bar_more_selector" />
+
+    <ImageView
+        android:id="@+id/fx_iv_choice_item_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/rd_choice_item_selector" />
+
+    <TextView
+        android:id="@+id/fx_tv_choice_item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toStartOf="@id/fx_choice_item_more"
+        android:layout_toLeftOf="@id/fx_choice_item_more"
+        android:layout_toEndOf="@+id/fx_iv_choice_item_select"
+        android:layout_toRightOf="@+id/fx_iv_choice_item_select"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="@color/ux_text_color_body2_dark"
+        android:textSize="@dimen/ux_text_size_16sp" />
+
+    <LinearLayout
+        android:id="@+id/fx_choice_more_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/ux_bg_color_toolbar_light"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/fx_ll_rename_choice_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/fb_item_func_layout_selector"
+            android:gravity="center"
+            android:minWidth="60dp"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:id="@+id/fx_rename_choice_item_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/rd_annot_item_comment_selector" />
+
+            <TextView
+                android:id="@+id/fx_rename_choice_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/fx_string_rename"
+                android:textColor="@color/hm_bottom_bar_text_color_selector"
+                android:textSize="@dimen/ux_text_size_12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fx_delete_choice_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/fb_item_func_layout_selector"
+            android:gravity="center"
+            android:minWidth="60dp"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:id="@+id/fx_delete_choice_item_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/rd_delete_selector" />
+
+            <TextView
+                android:id="@+id/fx_delete_choice_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/fx_string_delete"
+                android:textColor="@color/hm_bottom_bar_text_color_selector"
+                android:textSize="@dimen/ux_text_size_12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E3E3E3" />
+</RelativeLayout>

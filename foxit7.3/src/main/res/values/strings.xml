@@ -1,0 +1,102 @@
+<resources>
+    <string name="fx_string_yes">Yes</string>
+    <string name="fx_string_no">No</string>
+    <string name="fx_string_ok">OK</string>
+    <string name="fx_string_cancel">Cancel</string>
+    <string name="fx_string_save">Save</string>
+    <string name="fx_string_saveas">Save as</string>
+    <string name="fx_string_delete">Delete</string>
+    <string name="fx_string_auto">Auto</string>
+    <string name="fx_string_info">Info</string>
+    <string name="fx_string_add">Add</string>
+    <string name="fx_string_close">Close</string>
+    <string name="fx_string_select_all">Select all</string>
+    <string name="fx_string_done">Done</string>
+    <string name="fx_string_original">Original</string>
+    <string name="fx_string_setting">Settings</string>
+    <string name="fx_string_name">Name</string>
+    <string name="fx_string_error">Error</string>
+
+    <string name="hm_back">Back</string>
+    <string name="hm_document">Document</string>
+    <string name="hm_sign">Sign In</string>
+    <string name="hm_signout">Sign Out</string>
+
+    <!-- comparison -->
+    <string name="hm_comparison_file_name">File Name</string>
+    <string name="hm_comparison_title">Compare</string>
+    <string name="hm_comparison_mode">Compare Mode</string>
+    <string name="hm_comparison_mode_overlay">Overlay</string>
+    <string name="hm_comparison_mode_side_by_side">Side-By-Side</string>
+    <string name="hm_comparison_old_file">Old File</string>
+    <string name="hm_comparison_new_file">New File</string>
+    <string name="hm_comparison_selected_color">Selected Color</string>
+    <string name="hm_comparison_selected_file_title">Select</string>
+
+    <string name="rv_panel_annot_loading_start">Loading&#8230;</string>
+    <string name="rv_panel_annot_deleting">Deleting&#8230;</string>
+    <string name="rv_panel_annot_failed">Failed&#8230;</string>
+    <string name="fx_string_saving">Saving&#8230;</string>
+    <string name="fx_string_closing">Closing&#8230;</string>
+    <string name="fx_string_recovering">Recovering&#8230;</string>
+    <string name="fx_string_opening">Opening&#8230;</string>
+    <string name="fx_string_copying">Copying&#8230;</string>
+    <string name="fx_string_processing">Processing&#8230;</string>
+
+    <!-- Property Tab -->
+    <string name="pb_fill_tab">Fill</string>
+    <string name="pb_icon_tab">Icon</string>
+    <string name="pb_border_tab">Border</string>
+    <string name="pb_fontname_tab">Font Name</string>
+    <string name="pb_watermark_tab">Watermark</string>
+    <string name="pb_overlay_text_tab">Overlay Text</string>
+    <string name="pb_options_tab">Options</string>
+
+    <string name="fx_import_blank_page">Blank Page</string>
+    <string name="fx_import_file">Document</string>
+    <string name="fx_import_dcim">From Album</string>
+    <string name="fx_import_camera">From Camera</string>
+    <string name ="fx_string_import">Document</string>
+
+    <string name ="fx_string_minimum">Minimum</string>
+    <string name ="fx_string_low">Low</string>
+    <string name ="fx_string_medium">Medium</string>
+    <string name ="fx_string_high">High</string>
+    <string name ="fx_string_maximum">Maximum</string>
+
+    <!-- UIMatchDialog -->
+    <string name="fm_annot_copy">Content has been added to clipboard.</string>
+    <string name="fm_move">Move</string>
+    <string name="fm_paste_replace">Replace</string>
+    <string name="fm_paste_skip">Skip</string>
+    <string name="rv_emailreview_mergedlg_openbutton">No, open only</string>
+    <string name="cloud_toolbar_more_upload">Upload</string>
+
+    <string name="rv_url_dialog_title">Visit</string>
+    <string name="rv_urldialog_title">Potential security problem exists when opening the link, please confirm to open.</string>
+    <string name="rv_urldialog_title_ko"></string>
+    <string name="rv_invalid_license">You are not authorized to use this add-on module, please contact us for upgrading your license.</string>
+    <string name="rv_deivce_limitation">You have exceeded the allowed number of devices for this document.</string>
+    <string name="rv_no_rights">You have no right to open this document.</string>
+    <string name="rv_rights_expired">Your license or free trial has expired.</string>
+    <string name="rv_document_open_failed">Failed to open this file</string>
+    <string name="rv_unknown_error">Unknown error</string>
+    <string name="rv_format_error">Format error: not a PDF or corrupted</string>
+
+    <string name="rv_back_save_to_original_file">Save to the original file</string>
+    <string name="rv_back_save_to_new_file">Save to a new file</string>
+    <string name="rv_back_discard_modify">Discard all changes</string>
+    <string name="fx_save_file_failed">Save document failed!</string>
+    <string name="fx_string_filereplace_warning">The file already exists, do you want to replace it?</string>
+
+    <string name="rv_password_dialog_title">Password</string>
+    <string name="rv_tips_password_error">The password is incorrect, please try again</string>
+    <string name="rv_tips_password">This file is password protected, please enter password below</string>
+    <string name="fx_string_password_dialog_title">Please Input password</string>
+
+    <string name="fx_flatten_toast">Flatten the annotation to make it becomes a part of page content and it cannot be modified or removed.</string>
+    <string name="fx_form_rename_toast">The name you have inputted has already been used in an existing field. Please choose a different name, or change the field type to match the existing field.</string>
+    <string name="fx_flatten_doc_toast">Flatten annotations or PDF forms to make them become a part of page content and prevent further editing.</string>
+    <string name="fx_system_language_changed_toast">The system language has changed, It is recommended that you restart the current application.</string>
+</resources>
+

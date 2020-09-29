@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ux_color_white"
+>
+    <TextView
+        android:id="@+id/sign_list_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/ux_list_item_height_1l_phone"
+        android:text="name"
+        android:textColor="@color/ux_text_color_subhead_colour"
+        android:textSize="@dimen/ux_text_height_menu"
+
+    />
+    <View
+        android:id="@+id/sign_list_group_item_cutting_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_toolbar_solidLine_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ux_color_dialog_cutting_line"
+    />
+</RelativeLayout>

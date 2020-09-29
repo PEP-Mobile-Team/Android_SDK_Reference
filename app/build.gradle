@@ -28,7 +28,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
-    api project(path: ':library-foxit')
-    api project(path: ':library-bigdata')
+//    api project(path: ':library-foxit')
+//    api project(path: ':library-bigdata')
 //    implementation 'com.github.sunbx.FoxitCore:library-foxit:v2.0'
 }

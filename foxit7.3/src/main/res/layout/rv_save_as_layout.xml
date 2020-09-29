@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+        android:text="@string/fx_string_saveas_filename"
+        android:layout_marginTop="@dimen/ux_horz_right_margin_phone"
+        android:textColor="@color/ux_text_color_subhead_colour"
+        android:textSize="@dimen/ux_text_size_12sp"/>
+
+    <com.foxit.uiextensions.utils.UIMarqueeTextView
+        android:id="@+id/rv_save_as_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_list_item_height_1l_phone"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+        android:paddingRight="@dimen/ux_horz_left_margin_phone"
+        android:text="@string/fx_string_saveas_filename"
+        android:textColor="@color/ux_text_color_body2_dark"
+        android:textSize="@dimen/ux_text_size_16sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@string/fx_string_saveas"
+        android:src="@color/ux_color_seperator_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginTop="@dimen/ux_horz_right_margin_phone"
+        android:text="@string/fx_string_format"
+        android:textColor="@color/ux_text_color_subhead_colour"
+        android:textSize="@dimen/ux_text_size_12sp"/>
+
+    <ListView
+        android:id="@+id/rv_save_format_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null">
+    </ListView>
+
+</LinearLayout>

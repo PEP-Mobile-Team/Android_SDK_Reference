@@ -1,0 +1,6 @@
+<resources>
+    <string name="rd_bar_panel">List</string>
+    <string name="rd_bar_setting">View</string>
+    <string name="rd_bar_edit">Comment</string>
+    <string name="rd_bar_sign">Sign</string>
+</resources>

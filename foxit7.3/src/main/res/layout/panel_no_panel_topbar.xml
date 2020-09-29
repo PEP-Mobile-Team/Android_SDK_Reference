@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/panel_no_panel_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_toolbar_height_phone"
+        android:background="@color/ux_text_color_subhead_colour"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/panel_no_panel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/rv_no_panel_top"
+            android:textColor="@color/ux_color_white"
+            android:textSize="@dimen/ux_text_height_title" />
+
+        <ImageView
+            android:id="@+id/panel_no_panel_topbar_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+            android:layout_gravity="left|center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/panel_topbar_close_selector"/>
+    </FrameLayout>
+
+</FrameLayout>

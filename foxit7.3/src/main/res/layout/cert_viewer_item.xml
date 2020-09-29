@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rd_cert_list_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ux_list_item_height_2l_phone">
+
+    <ImageView
+        android:id="@+id/iv_toggle_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/rd_expand_arrow">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/iv_toggle_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_certificate_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginBottom="6dp"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="@color/ux_text_color_body2_dark"
+            android:textSize="@dimen/ux_text_height_body2"/>
+
+        <TextView
+            android:id="@+id/tv_certificate_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Date"
+            android:textColor="@color/ux_text_color_body1_gray"
+            android:textSize="@dimen/ux_text_height_body1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ux_list_item_height_2l_phone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_cert_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/rd_bar_more_selector"/>
+
+        <LinearLayout
+            android:id="@+id/ll_certificate_more_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#d5d5d5"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/rd_certificate_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/cert_viewer_item_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/rd_certificate_detail_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_detail_selector"/>
+
+                <TextView
+                    android:id="@+id/rd_certificate_detail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/fx_string_info"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rd_add_trust_ceatificate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/cert_viewer_item_layout_selector"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/rd_add_trust_ceatificate_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/rd_trust_selector"/>
+
+                <TextView
+                    android:id="@+id/rd_add_trust_ceatificate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/rv_trust_certificate"
+                    android:textColor="@color/hm_bottom_bar_text_color_selector"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

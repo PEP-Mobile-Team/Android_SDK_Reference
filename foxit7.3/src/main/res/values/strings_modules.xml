@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--AccountModule -->
+    <string name="sign_out_tips">Should you want to sign out now?</string>
+
+    <!-- CropModule -->
+    <string name="fx_string_crop_title">Crop</string>
+    <string name="fx_string_nocrop">No Crop</string>
+    <string name="fx_string_crop">Crop</string>
+    <string name="fx_string_smartcrop">Smart Crop</string>
+    <string name="fx_string_detect">AutoDetect</string>
+
+    <!-- Pan and Zoom -->
+    <string name="fx_string_pan_zoom_title">Pan and Zoom</string>
+    <string name="not_window_permissions_tips">Your phone is not granted floating window permissions, please turn it on and try again</string>
+    <string name="fx_turn_on">Now, turn it on</string>
+    <string name="fx_turn_later">Later</string>
+
+    <!-- Snapshot -->
+    <string name="failed_to_save_snapshot">Failed to save snapshot!</string>
+    <string name="the_snapshot_save_path">The image was save in: %1$s</string>
+
+    <!-- PageNavigationModule -->
+    <string name="rv_gotopage_error_toast">Please input correct page number</string>
+    <string name="rd_gotopage_toolbar_go">GO</string>
+
+    <!-- FormFillerModule -->
+    <string name="fx_form_item_list">Item List</string>
+    <string name="fx_combox_custom_text">Custom Text</string>
+    <string name="fx_listbox_multiple_text">Multiple Selection</string>
+    <string name="fx_no_item_tips">Click here to add item</string>
+
+    <!-- form navigation  Resource -->
+    <string name="formfiller_navigation_clear">Reset Field</string>
+
+    <!-- Thumbnail -->
+    <string name="fx_string_rotate">Rotate</string>
+    <string name="fx_string_extract">Extract</string>
+    <string name ="fx_string_extract_to">Extract To</string>
+    <string name ="rv_page_import">Importing pages&#8230;</string>
+    <string name ="rv_page_extract">Extracting pages&#8230;</string>
+    <string name ="rv_page_rotate_cw">Clockwise rotating pages&#8230;</string>
+    <string name ="rv_page_delete">Deleting pages&#8230;</string>
+    <string name ="rv_page_extract_error">Failed to extract the page(s).</string>
+    <string name ="rv_page_import_error">Failed to import the page(s).</string>
+    <string name ="rv_page_remove_error">Removing failed.</string>
+    <string name ="rv_page_rotate_error">Failed to rotate the page(s).</string>
+    <string name="xfa_not_support_move_toast">XFA file does not supported move page</string>
+    <string name="xfa_not_support_to_edit_toast">XFA files do not support editing.</string>
+    <string name="xfa_not_supported_add_image_toast">XFA file does not supported add image.</string>
+    <string name="cinflicted_with_current_doc_toast">Conflicted with current doc, please re-input new filename!!!</string>
+    <string name="the_file_can_not_replace_toast">%1$s Can not be replaced.</string>
+    <string name="rv_page_delete_all_thumbnail">Deleting all page(s) is not allowed.</string>
+    <string name="rv_page_delete_thumbnail">Are you sure you want to delete the selected page(s)? You cannot undo this action.</string>
+    <string name="createpdf_add_page_title">Add Page</string>
+    <string name="createpdf_new_page_blank">Blank</string>
+    <string name="createpdf_new_page_lined">Lined</string>
+    <string name="createpdf_new_page_grid">Grid</string>
+    <string name="createpdf_new_page_graph">Graph</string>
+    <string name="createpdf_new_page_music">Music</string>
+    <string name="createpdf_new_pagenum">Page Count</string>
+    <string name="createpdf_new_pagesize">Page Size</string>
+    <string name="createpdf_new_pagecolor">Page Color</string>
+    <string name="createpdf_new_pageorientation">Orientation</string>
+    <string name="createpdf_new_ori_partrait">Portrait</string>
+    <string name="createpdf_new_ori_landspace">Landscape</string>
+    <string name="createpdf_new_pagesize_letter">Letter</string>
+    <string name="createpdf_new_pagesize_A3">A3</string>
+    <string name="createpdf_new_pagesize_A4">A4</string>
+    <string name="createpdf_new_pagesize_legal">Legal</string>
+    <string name="createpdf_new_pagesize_ledger">Ledger</string>
+    <string name="fx_original_color">Current</string>
+    <string name="fx_current_color">New</string>
+    <string name="fx_theme_color">Theme Colors</string>
+
+    <!-- ReadingBookmarkModule -->
+    <string name="fx_page_book_mark">Page %1$d</string>
+
+    <!--  Search -->
+    <string name="search_hint">Input text to search</string>
+    <string name="search_find_number">Total Found: %1$d</string>
+    <string name="searching_find_number">Searching&#8230;\nFound: %1$d</string>
+    <string name="search_page_number">Page %1$s</string>
+    <string name="search_whole_words">Whole Words Only</string>
+    <string name="search_case_sensitive">Case-Sensitive</string>
+    <string name="search_in_internet">Search in Internet</string>
+
+    <!-- Compare -->
+    <string name="legend">Legend</string>
+    <string name="show_legend">Show Legend</string>
+    <string name="hide_legend">Hide Legend</string>
+    <string name="replaced">Replaced</string>
+    <string name="inserted">Inserted</string>
+    <string name="deleted">Deleted</string>
+    <string name="unsupported_file_format">The file format is not supported</string>
+    <string name="compare_diff_file">Please select two different documents for comparison.</string>
+    <string name="compare_progress">Document comparing&#8230;</string>
+
+    <!-- TTS -->
+    <string name="rd_tts_speak">Speak</string>
+    <string name="rd_tts_speak_string">Read aloud selected content</string>
+    <string name="rd_tts_speak_start">Read aloud from current position</string>
+    <string name="atb_rd_speak_continue_reading_button">Continue reading button</string>
+    <string name="atb_rd_speak_previous_page_button">Read the previous page button</string>
+    <string name="atb_rd_speak_next_page_button">Read the next page button</string>
+    <string name="atb_rd_speak_stop_button">Stop reading button</string>
+    <string name="atb_rd_speak_repeat_button">Repeat the reading button</string>
+    <string name="atb_rd_speak_pause_button">Pause reading button</string>
+    <string name="tts_speechrate_title">Playback Speed</string>
+
+    <!--multi select-->
+    <string name="fx_string_group">Group</string>
+    <string name="fx_string_ungroup">UnGroup</string>
+</resources>

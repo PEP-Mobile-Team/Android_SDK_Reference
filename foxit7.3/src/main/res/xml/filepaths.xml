@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="saved_image_dir_path"
+        path="/FoxitSDK/camera/"/>
+
+    <external-path
+        name="attachment_tmp_path"
+        path="FoxitSDK/AttaTmp/"/>
+</paths>

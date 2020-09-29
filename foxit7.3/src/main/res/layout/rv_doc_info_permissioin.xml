@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ux_text_color_title_light" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/rv_doc_info_root_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/rv_doc_info_permission_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:text="@string/rv_doc_info_permission_summary"
+                android:textColor="@color/ux_text_color_subhead_colour"
+                android:textSize="@dimen/ux_text_height_toolbar" />
+
+            <RelativeLayout
+                android:id="@+id/rv_doc_info_permisson_print_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_print_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/fx_string_allowed"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_print"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/rv_doc_info_permission_print_of"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/rv_doc_info_permission_print"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/rv_doc_info"
+                android:src="@color/ux_color_seperator_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rv_doc_info_permission_fillform_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_fillform_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/fx_string_allowed"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_fillform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/rv_doc_info_permission_fillform_of"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/rv_doc_info_permission_fillform"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/rv_doc_info"
+                android:src="@color/ux_color_seperator_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rv_doc_info_permission_annotform_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_annotform_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/fx_string_allowed"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_annotform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/rv_doc_info_permission_annotform_of"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/rv_doc_info_permission_annotform"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/rv_doc_info"
+                android:src="@color/ux_color_seperator_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rv_doc_info_permission_assemble_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_assemble_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/fx_string_allowed"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_assemble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/rv_doc_info_permission_assemble_of"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/rv_doc_info_permission_assemble"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/rv_doc_info"
+                android:src="@color/ux_color_seperator_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rv_doc_info_permission_modify_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_modify_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/fx_string_allowed"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_modify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/rv_doc_info_permission_modify_of"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/rv_doc_info_permission_modify"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/rv_doc_info"
+                android:src="@color/ux_color_seperator_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rv_doc_info_permission_extractaccess_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_extractaccess_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/fx_string_allowed"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_extractaccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/rv_doc_info_permission_extractaccess_of"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/rv_doc_info_permission_extractaccess"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/rv_doc_info"
+                android:src="@color/ux_color_seperator_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rv_doc_info_permission_extract_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_extract_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/fx_string_allowed"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_extract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/rv_doc_info_permission_extract_of"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/rv_doc_info_permission_extract"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/rv_doc_info"
+                android:src="@color/ux_color_seperator_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rv_doc_info_permission_signing_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ux_list_item_height_1l_phone"
+                android:paddingLeft="@dimen/ux_horz_left_margin_phone"
+                android:paddingRight="@dimen/ux_horz_right_margin_phone" >
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_signing_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/fx_string_allowed"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+
+                <TextView
+                    android:id="@+id/rv_doc_info_permission_signing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/rv_doc_info_permission_signing_of"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/rv_doc_info_permission_signing"
+                    android:textColor="@color/ux_text_color_body2_dark"
+                    android:textSize="@dimen/ux_text_height_menu" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@string/rv_doc_info"
+                android:src="@color/ux_color_seperator_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

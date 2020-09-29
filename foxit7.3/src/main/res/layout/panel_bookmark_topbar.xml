@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/panel_bookmark_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ux_toolbar_height_phone"
+        android:background="@color/ux_text_color_subhead_colour"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/panel_bookmark_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/rv_panel_readingbookmark_title"
+            android:textColor="@color/ux_color_white"
+            android:textSize="@dimen/ux_text_height_title" />
+
+        <ImageView
+            android:id="@+id/panel_bookmark_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/panel_topbar_close_selector"/>
+
+        <TextView
+            android:id="@+id/panel_bookmark_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+            android:paddingLeft="10dp"
+            android:text="@string/hm_clear"
+            android:textColor="@color/hm_clear_color_selector"
+            android:textSize="@dimen/ux_text_height_button"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</FrameLayout>

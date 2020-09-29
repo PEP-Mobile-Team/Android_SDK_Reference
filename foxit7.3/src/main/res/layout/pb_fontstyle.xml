@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pb_tv_fontStyleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:paddingTop="5dp"
+        android:paddingBottom="7dp"
+        android:text="@string/fx_string_font"
+        android:textColor="@color/ux_text_color_body2_gray"
+        android:textSize="@dimen/ux_text_height_menu" />
+
+    <LinearLayout
+        android:id="@+id/pb_ll_fontStyle"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ux_horz_left_margin_phone"
+        android:layout_marginRight="@dimen/ux_horz_left_margin_phone"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:padding="5dp"
+            android:text="@string/fx_font_courier"
+            android:textColor="@color/ux_text_color_body2_gray"
+            android:textSize="12sp"
+            android:background="@drawable/pb_fontstyle_tv_border"
+            android:id="@+id/pb_tv_font"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="12px"
+            android:textColor="@color/ux_text_color_body2_gray"
+            android:textSize="12sp"
+            android:background="@drawable/pb_fontstyle_tv_border"
+            android:id="@+id/pb_tv_fontSize"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pb_separator_iv"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@color/ux_color_seperator_gray"/>
+</LinearLayout>
