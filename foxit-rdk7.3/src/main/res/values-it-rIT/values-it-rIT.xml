@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fx_string_ok">OK</string>
+    <string name="not_support_oom_recovery">Questo modo di aprire il documento non supporta il ripristino di OOM.</string>
+    <string name="out_of_memory_and_recovering">Memoria insufficiente, Elaborazione in corso…</string>
+    <string name="out_of_memory_but_cannot_recovered">Il recupero della memoria non è riuscito.</string>
+    <string name="rv_sign_waiting">Elaborazione in corso…</string>
+</resources>

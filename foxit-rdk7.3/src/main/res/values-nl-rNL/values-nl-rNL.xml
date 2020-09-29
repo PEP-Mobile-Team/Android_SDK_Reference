@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fx_string_ok">OK</string>
+    <string name="not_support_oom_recovery">Deze manier om het document te openen biedt geen ondersteuning voor OOM-herstel.</string>
+    <string name="out_of_memory_and_recovering">Onvoldoende geheugen, Bezig met verwerken…</string>
+    <string name="out_of_memory_but_cannot_recovered">Geheugenterugwinning mislukt.</string>
+    <string name="rv_sign_waiting">Bezig met verwerken…</string>
+</resources>
