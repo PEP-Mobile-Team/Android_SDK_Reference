@@ -256,24 +256,25 @@ public class BlankSelectToolHandler implements ToolHandler {
     private ArrayList<Integer> getBlankSelectItems() {
         ArrayList<Integer> items = new ArrayList<Integer>();
 
-        if (((UIExtensionsManager) mUiExtensionsManager).getDocumentManager().canAddAnnot()
-                && ((UIExtensionsManager) mUiExtensionsManager).getConfig().modules.getAnnotConfig().isLoadNote()
-                && ((UIExtensionsManager) mUiExtensionsManager).getAnnotHandlerByType(Annot.e_Note) != null) {
-            items.add(AnnotMenu.AM_BT_NOTE);
-        }
-        if (((UIExtensionsManager) mUiExtensionsManager).getDocumentManager().canAddSignature()
-                && ((UIExtensionsManager) mUiExtensionsManager).getModuleByName(Module.MODULE_NAME_PSISIGNATURE) != null) {
-            PanZoomModule panZoomModule = (PanZoomModule) ((UIExtensionsManager) mUiExtensionsManager).getModuleByName(Module.MODULE_NAME_PANZOOM);
-            if (panZoomModule == null || !panZoomModule.isInPanZoomMode()) {
-                items.add(AnnotMenu.AM_BT_SIGNATURE);
-            }
-        }
-
-        if (((UIExtensionsManager) mUiExtensionsManager).getDocumentManager().canAddAnnot()
-                && ((UIExtensionsManager) mUiExtensionsManager).getConfig().modules.getAnnotConfig().isLoadRedaction()
-                && ((UIExtensionsManager) mUiExtensionsManager).getAnnotHandlerByType(Annot.e_Redact) != null) {
-            items.add(AnnotMenu.AM_BT_REDACT);
-        }
+        //取消pdf页上空白处的长按操作
+//        if (((UIExtensionsManager) mUiExtensionsManager).getDocumentManager().canAddAnnot()
+//                && ((UIExtensionsManager) mUiExtensionsManager).getConfig().modules.getAnnotConfig().isLoadNote()
+//                && ((UIExtensionsManager) mUiExtensionsManager).getAnnotHandlerByType(Annot.e_Note) != null) {
+//            items.add(AnnotMenu.AM_BT_NOTE);
+//        }
+//        if (((UIExtensionsManager) mUiExtensionsManager).getDocumentManager().canAddSignature()
+//                && ((UIExtensionsManager) mUiExtensionsManager).getModuleByName(Module.MODULE_NAME_PSISIGNATURE) != null) {
+//            PanZoomModule panZoomModule = (PanZoomModule) ((UIExtensionsManager) mUiExtensionsManager).getModuleByName(Module.MODULE_NAME_PANZOOM);
+//            if (panZoomModule == null || !panZoomModule.isInPanZoomMode()) {
+//                items.add(AnnotMenu.AM_BT_SIGNATURE);
+//            }
+//        }
+//
+//        if (((UIExtensionsManager) mUiExtensionsManager).getDocumentManager().canAddAnnot()
+//                && ((UIExtensionsManager) mUiExtensionsManager).getConfig().modules.getAnnotConfig().isLoadRedaction()
+//                && ((UIExtensionsManager) mUiExtensionsManager).getAnnotHandlerByType(Annot.e_Redact) != null) {
+//            items.add(AnnotMenu.AM_BT_REDACT);
+//        }
         return items;
     }
 
